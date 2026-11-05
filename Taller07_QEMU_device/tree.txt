@@ -1,0 +1,35 @@
+.
+├── build
+│   ├── firmware.bin
+│   ├── firmware.elf
+│   └── firmware.map
+├── Dockerfile
+├── README.md
+├── README.txt
+├── scripts
+│   ├── build.sh
+│   ├── rebuild-device.sh
+│   └── run.sh
+├── src
+│   ├── device-skeleton
+│   │   └── riscv_edu_matmul.c
+│   └── firmware
+│       ├── app.c
+│       ├── app.o
+│       ├── devices.c
+│       ├── devices.h
+│       ├── devices.o
+│       ├── firmware.bin
+│       ├── firmware.elf
+│       ├── firmware.map
+│       ├── linker.ld
+│       ├── main.c
+│       ├── main.o
+│       ├── Makefile
+│       ├── start.o
+│       └── start.S
+├── Taller_07_QEMU_device.pdf
+├── tree.txt
+└── Tut7_Informe_BarqueroJose_CE1113_2026.pdf
+
+6 directories, 27 files

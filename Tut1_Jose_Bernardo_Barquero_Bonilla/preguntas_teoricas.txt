@@ -1,0 +1,13 @@
+1. Una distribución de Linux es un paquete completo que combina el kernel de LInux con un conjunto de herramientas y políticas para formar un SO usable.
+Las distribuciones suelen tener el kernel de linux, un gestor de paquetes, bibliotecas del sistema y herramientas de compilación, un sistema de inicio y si se requiere un entorno de escritorio para uso interactivo con interfaz gráfica.
+
+2. El shell es un interprete de comandos. Es un programa que lee las instrucciones que el usuario escribe en la terminal, las interpreta y solicita al SO que las ejecute.
+
+3. La ruta relativa es la que describe la ubicación exacta de un archivo desde la raíz del sistema, mientras que las rutas relativas son las que describen la ubicación de un archivo respecto al directorio actual.
+
+4. El comando "env" imprime todas las variables de entorno definidas en la sesión actual.
+
+5. Los pipes son útiles porque permiten combinar comandos simples en flujos de procesamiento complejos. 
+Ejemplo:
+
+echo "Jose Bernardo Barquero Bonilla" > Ejercicio1.txt | echo "2023150476" >> Ejercicio1.txt

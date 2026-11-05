@@ -1,0 +1,105 @@
+Jose Bernardo Barquero Bonilla
+2023150476
+Wed Aug 12 07:34:32 PM CST 2026
+jose_barquero
+7.0.0-22-generic
+    PID TTY          TIME CMD
+   3755 ?        00:00:02 systemd
+   3773 ?        00:00:00 (sd-pam)
+   3803 ?        00:00:01 dbus-daemon
+   3804 ?        00:00:00 pipewire
+   3808 ?        00:00:00 gnome-keyring-d
+   3809 ?        00:00:00 mpris-proxy
+   3813 ?        00:00:00 wireplumber
+   3820 ?        00:00:00 pipewire
+   3826 ?        00:00:00 pipewire-pulse
+   3895 ?        00:00:00 xdg-document-po
+   3899 ?        00:00:00 xdg-permission-
+   3933 tty2     00:00:00 gdm-wayland-ses
+   3944 tty2     00:00:00 gnome-session-i
+   4124 ?        00:00:00 gcr-ssh-agent
+   4125 ?        00:00:00 gnome-session-c
+   4126 ?        00:00:00 ssh-agent
+   4138 ?        00:00:00 gvfsd
+   4144 ?        00:00:00 gvfsd-fuse
+   4149 ?        00:00:00 gnome-session-s
+   4175 ?        00:00:41 gnome-shell
+   4260 ?        00:00:00 at-spi-bus-laun
+   4270 ?        00:00:00 dbus-daemon
+   4273 ?        00:00:00 at-spi2-registr
+   4292 ?        00:00:00 gnome-shell-cal
+   4301 ?        00:00:00 evolution-sourc
+   4312 ?        00:00:00 gjs
+   4329 ?        00:00:01 ibus-daemon
+   4334 ?        00:00:00 gsd-a11y-settin
+   4335 ?        00:00:00 gsd-color
+   4339 ?        00:00:00 gsd-datetime
+   4340 ?        00:00:00 gsd-housekeepin
+   4341 ?        00:00:00 gsd-keyboard
+   4346 ?        00:00:00 gsd-media-keys
+   4348 ?        00:00:00 gsd-power
+   4349 ?        00:00:00 gsd-print-notif
+   4351 ?        00:00:00 gsd-rfkill
+   4355 ?        00:00:00 gsd-screensaver
+   4359 ?        00:00:00 gsd-sharing
+   4361 ?        00:00:00 gsd-smartcard
+   4373 ?        00:00:00 gsd-sound
+   4375 ?        00:00:00 gsd-usb-protect
+   4380 ?        00:00:00 update-notifier
+   4391 ?        00:00:00 evolution-alarm
+   4392 ?        00:00:00 gsd-wwan
+   4394 ?        00:00:00 gsd-disk-utilit
+   4476 ?        00:00:00 ibus-memconf
+   4479 ?        00:00:03 ibus-extension-
+   4486 ?        00:00:00 ibus-portal
+   4529 ?        00:00:00 gjs
+   4535 ?        00:00:03 localsearch-3
+   4538 ?        00:00:00 goa-daemon
+   4574 ?        00:00:00 gsd-printer
+   4589 ?        00:00:00 goa-identity-se
+   4591 ?        00:00:00 evolution-calen
+   4600 ?        00:00:00 Xwayland
+   4614 ?        00:00:00 evolution-addre
+   4637 ?        00:00:00 gvfs-udisks2-vo
+   4640 ?        00:00:00 ibus-engine-sim
+   4649 ?        00:00:00 gvfs-goa-volume
+   4654 ?        00:00:00 gvfs-afc-volume
+   4660 ?        00:00:00 gvfs-mtp-volume
+   4665 ?        00:00:00 gvfs-gphoto2-vo
+   4737 ?        00:00:00 gvfsd-metadata
+   4872 ?        00:00:00 dconf-service
+   4934 ?        00:00:00 gvfsd-trash
+   4951 ?        00:00:00 snapd-desktop-i
+   4953 ?        00:00:00 xdg-desktop-por
+   4955 ?        00:00:00 gsd-xsettings
+   4968 ?        00:00:00 xdg-desktop-por
+   4998 ?        00:00:00 ibus-x11
+   5060 ?        00:00:00 mutter-x11-fram
+   5061 ?        00:00:00 snapd-desktop-i
+   5232 ?        00:00:01 gjs
+   5289 ?        00:00:00 xdg-desktop-por
+   5476 ?        00:00:45 firefox
+   5555 ?        00:00:00 crashhelper
+   5676 ?        00:00:00 forkserver
+   5679 ?        00:00:00 Socket Process
+   5704 ?        00:00:01 Privileged Cont
+   5714 ?        00:00:00 RDD Process
+   5763 ?        00:00:00 snap
+   5916 ?        00:00:00 WebExtensions
+   6245 ?        00:00:00 Utility Process
+   6252 ?        00:00:00 Web Content
+   6259 ?        00:00:00 Web Content
+   6446 ?        00:00:00 Web Content
+   6489 ?        00:00:20 file:// Content
+   7097 ?        00:00:03 nautilus
+   7123 ?        00:00:00 gvfsd-recent
+   7131 ?        00:00:00 gvfsd-network
+   7140 ?        00:00:00 gvfsd-dnssd
+   7146 ?        00:00:00 gvfsd-wsdd
+   7151 ?        00:00:00 python3
+   7177 ?        00:00:00 gvfsd-computer
+   7243 ?        00:00:06 ptyxis
+   7255 ?        00:00:00 xdg-terminal-ex
+   7263 ?        00:00:00 ptyxis-agent
+   7287 pts/1    00:00:00 bash
+   7978 pts/1    00:00:00 ps

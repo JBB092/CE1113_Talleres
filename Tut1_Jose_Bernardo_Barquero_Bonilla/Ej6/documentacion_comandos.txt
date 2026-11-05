@@ -1,0 +1,35 @@
+Creación de la estructura de directorios y archivos
+
+mkdir Ej6: Crea el directorio principal llamado Ej6.
+
+cd Ej6: Ingresa dentro del directorio recién creado.
+
+mkdir 1 2 3: Crea los tres subdirectorios requeridos (1, 2 y 3) de forma simultánea.
+
+echo -e ... > ruta/archivo.log: Crea los archivos de texto .log con contenido personalizado. La opción -e interpreta los saltos de línea (\n), y el operador > guarda el texto en el archivo indicado (incluyendo líneas con la palabra ERROR).
+
+ls ruta/: Lista el contenido de las carpetas para verificar visualmente que los archivos se crearon correctamente.
+
+cat ruta/archivo.log: Muestra en pantalla el contenido de los archivos para comprobar que se escribieron bien.
+
+Generación del reporte ordenado
+
+find . -type f -name "*.log": Busca de forma recursiva a partir del directorio actual (.) únicamente los archivos que sean de tipo archivo (-type f) y cuya extensión termine en .log.
+
+-exec grep -c "ERROR" {} +: Ejecuta el comando grep para contar (-c) cuántas veces aparece la palabra ERROR en cada uno de los archivos encontrados. Devuelve una lista con el formato archivo:cantidad.
+
+| (Pipe): Toma la salida del comando anterior y la envía como entrada al siguiente comando para procesarla en cadena.
+
+sort -t: -k2,2nr: Ordena la lista de forma numérica (n) y descendente (r) basándose en la segunda columna (-k2,2), utilizando los dos puntos (-t:) como separador.
+
+> reporte.txt: Redirige todo el resultado ya ordenado y lo guarda en un archivo nuevo llamado reporte.txt.
+
+cat reporte.txt: Muestra el contenido del archivo de reporte generado para verificar el resultado final.
+
+Modificación de permisos y compresión
+
+chmod u=rw,go= reporte.txt: Modifica los permisos del archivo reporte.txt dejando lectura y escritura exclusivamente para el propietario (u=rw) y retirando todos los permisos para el grupo y otros (go=).
+
+ls -l reporte.txt: Muestra los permisos detallados del archivo para confirmar que el cambio se aplicó correctamente.
+
+tar -czvf Ej6.tar.gz Ej6: Comprime toda la carpeta Ej6 en un único archivo con formato tar.gz (-c para crear, -z para comprimir con gzip, -v para mostrar detalles en pantalla y -f para definir el nombre del archivo comprimido).

@@ -1,0 +1,84 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Nested Git metadata
+**/.git/
+
+# C/C++ compiler and linker outputs
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.d
+*.lo
+*.la
+*.lai
+*.elf
+*.bin
+*.map
+*.hex
+*.out
+*.Po
+*.Plo
+a.out
+*.exe
+*.gch
+*.gcda
+*.gcno
+calculadora
+calculadora_d
+calculadora_d_str
+calculadora_e
+bin/
+
+# CMake and out-of-source builds
+build/
+CMakeFiles/
+CMakeCache.txt
+CMakeConfigureLog.yaml
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CPackConfig.cmake
+CPackSourceConfig.cmake
+_CPack_Packages/
+
+# Autotools and Libtool outputs
+autom4te.cache/
+.libs/
+.deps/
+config.log
+config.status
+config.lt
+libtool
+stamp-h1
+configure~
+
+# Embedded and FPGA tool outputs
+*.dtb
+*.uf2
+*.bit
+*.sof
+*.rbf
+*.rpd
+*.jic
+
+# Runtime, test, and tool logs
+*.log
+*.status
+*.trace
+*.tmp
+*.bak
+
+# Zephyr and west working directories
+.west/
+zephyr/
