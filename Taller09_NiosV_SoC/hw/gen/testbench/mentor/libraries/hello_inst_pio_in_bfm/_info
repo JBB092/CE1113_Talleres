@@ -1,0 +1,37 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/mentor
+valtera_conduit_bfm
+2./../hello_tb/simulation/submodules/altera_conduit_bfm.sv
+DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+DXx25 altera_common_sv_packages 13 verbosity_pkg 0 22 z7mO9IZ<MmR1a05g=b;_D0
+!s110 1794541933
+!i10b 1
+!s100 ;e^CMhO>Y@bQ7A<B_Wn<:1
+I@TThE>=`gRkbYG;oTUY]_0
+S1
+R0
+w1794316194
+8./../hello_tb/simulation/submodules/altera_conduit_bfm.sv
+F./../hello_tb/simulation/submodules/altera_conduit_bfm.sv
+!i122 8
+L0 36 67
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2025.2;82
+r1
+!s85 0
+31
+!s108 1794541933.000000
+!s107 ./../hello_tb/simulation/submodules/altera_conduit_bfm.sv|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_conduit_bfm.sv|-L|altera_common_sv_packages|-work|hello_inst_pio_in_bfm|
+!i113 0
+o-sv -L altera_common_sv_packages -work hello_inst_pio_in_bfm -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0

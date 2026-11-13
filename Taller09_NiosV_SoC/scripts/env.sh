@@ -26,3 +26,6 @@ export SALT_LICENSE_SERVER
 echo "Entorno Nios V listo:"
 echo "  ALTERA_ROOT         = $ALTERA_ROOT"
 echo "  SALT_LICENSE_SERVER = $SALT_LICENSE_SERVER"
+
+# Usar CMake 3.31 y make de RiscFree (el CMake 4.x del sistema puede dar problemas)
+export PATH="$ALTERA_ROOT/riscfree/build_tools/cmake/bin:$ALTERA_ROOT/riscfree/build_tools/bin:$PATH"

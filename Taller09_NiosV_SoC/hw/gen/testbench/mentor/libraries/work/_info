@@ -1,0 +1,72 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/mentor
+T_opt
+!i145 1
+!i144 0
+!s110 1794316329
+V9<b92IK]I>Za0iiBL[Ei12
+Z2 04 8 4 work hello_tb fast 0
+=1-a497b1dd5c51-6af31828-bb9bc-27d8
+R0
+Z3 !s12f OEM100
+Z4 !s12b OEM100
+Z5 !s124 OEM10U168 
+Z6 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L work_lib -L altera_common_sv_packages -L error_adapter_0 -L niosv_reset_controller -L avalon_st_adapter -L rsp_mux_002 -L rsp_mux -L rsp_demux_002 -L rsp_demux -L cmd_mux_002 -L cmd_mux -L cmd_demux_002 -L cmd_demux -L router_006 -L router_004 -L router_002 -L router -L juart_avalon_jtag_slave_agent_rsp_fifo -L juart_avalon_jtag_slave_agent -L cpu_data_manager_agent -L juart_avalon_jtag_slave_translator -L irq_mapper -L dbg_mod -L timer_module -L hart -L rst_controller -L mm_interconnect_0 -L ram -L pio_out -L pio_in -L juart -L cpu -L hello_inst_reset_bfm -L hello_inst_pio_out_bfm -L hello_inst_pio_in_bfm -L hello_inst_clk_bfm -L hello_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver
+Z7 tCvgOpt 0
+n@_opt
+Z8 OL;O;2025.2;82
+R1
+T_opt1
+!i145 1
+!i144 0
+!s110 1794540437
+VOkGc`Hg>[9SFcULBcbm2K3
+R2
+=1-a497b1dd5c51-6af68394-17bcc-32a9
+R0
+R3
+R4
+R5
+R6
+o-quiet -auto_acc_if_foreign -work work -L work -L work_lib -L altera_common_sv_packages -L error_adapter_0 -L niosv_reset_controller -L avalon_st_adapter -L rsp_mux_002 -L rsp_mux -L rsp_demux_002 -L rsp_demux -L cmd_mux_002 -L cmd_mux -L cmd_demux_002 -L cmd_demux -L router_006 -L router_004 -L router_002 -L router -L juart_avalon_jtag_slave_agent_rsp_fifo -L juart_avalon_jtag_slave_agent -L cpu_data_manager_agent -L juart_avalon_jtag_slave_translator -L irq_mapper -L dbg_mod -L timer_module -L hart -L rst_controller -L mm_interconnect_0 -L ram -L pio_out -L pio_in -L juart -L cpu -L hello_inst_reset_bfm -L hello_inst_pio_out_bfm -L hello_inst_pio_in_bfm -L hello_inst_clk_bfm -L hello_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver +acc
+R7
+n@_opt1
+R8
+R1
+vhello_tb
+2./../hello_tb/simulation/hello_tb.v
+!s110 1794541934
+!i10b 1
+!s100 UmdbN=GIcjUXZ9O]A_HSM2
+IL=aWl0@b5K>IIc?b25^GI1
+R1
+w1794316190
+8./../hello_tb/simulation/hello_tb.v
+F./../hello_tb/simulation/hello_tb.v
+!i122 8
+L0 6 39
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2025.2;82
+r1
+!s85 0
+31
+!s108 1794541934.000000
+!s107 ./../hello_tb/simulation/hello_tb.v|
+!s90 -reportprogress|300|./../hello_tb/simulation/hello_tb.v|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R7

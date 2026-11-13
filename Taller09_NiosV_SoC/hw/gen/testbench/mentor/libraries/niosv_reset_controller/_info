@@ -1,0 +1,34 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/mentor
+vniosv_reset_controller
+2./../hello_tb/simulation/submodules/niosv_reset_controller.v
+!s110 1794541919
+!i10b 1
+!s100 _W@]:Qa3PQ1bP?a:Wh]<E1
+Ign^D[5X<QInUkUQJZ^iGJ0
+R0
+w1794316196
+8./../hello_tb/simulation/submodules/niosv_reset_controller.v
+F./../hello_tb/simulation/submodules/niosv_reset_controller.v
+!i122 8
+L0 6 96
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2025.2;82
+r1
+!s85 0
+31
+!s108 1794541919.000000
+!s107 ./../hello_tb/simulation/submodules/niosv_reset_controller.v|
+!s90 -reportprogress|300|./../hello_tb/simulation/submodules/niosv_reset_controller.v|-work|niosv_reset_controller|
+!i113 0
+o-work niosv_reset_controller -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0

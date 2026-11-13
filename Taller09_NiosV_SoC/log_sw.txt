@@ -1,0 +1,142 @@
+Entorno Nios V listo:
+  ALTERA_ROOT         = /home/jose_barquero/altera_lite/25.1std
+  SALT_LICENSE_SERVER = /home/jose_barquero/altera_lite/LR-182429_License.dat
+>> Generando BSP (HAL) ...
+2026.11.10.07:11:08 Warning: Environment variable SOPC_KIT_NIOS2 not set
+2026.11.10.07:11:12 Info: Searching for BSP components with category: os_software_element
+2026.11.10.07:11:12 Info: Creating BSP settings.
+2026.11.10.07:11:12 Info: Initializing SOPC project local software IP
+2026.11.10.07:11:12 Info: Finished initializing SOPC project local software IP. Total time taken = 2 seconds
+2026.11.10.07:11:12 Info: Searching for BSP components with category: driver_element
+2026.11.10.07:11:12 Info: Searching for BSP components with category: software_package_element
+2026.11.10.07:11:13 Info: Loading drivers from ensemble report. 
+2026.11.10.07:11:13 Info: Finished loading drivers from ensemble report.
+2026.11.10.07:11:13 Info: Evaluating default script "/home/jose_barquero/altera_lite/25.1std/quartus/../niosv/scripts/bsp-defaults/bsp-set-defaults.tcl".
+2026.11.10.07:11:13 Info: Tcl message: "STDIO character device is juart"
+2026.11.10.07:11:13 Info: Tcl message: "System timer device is cpu"
+2026.11.10.07:11:13 Info: Tcl message: "Default linker sections mapped to ram"
+2026.11.10.07:11:13 Info: Tcl message: "No bootloader located at the reset address."
+2026.11.10.07:11:13 Info: Tcl message: "Application ELF allowed to contain code at the reset address."
+2026.11.10.07:11:13 Info: Tcl message: "The alt_load() facility is enabled."
+2026.11.10.07:11:13 Info: Tcl message: "The .rwdata section is copied into RAM by alt_load()."
+2026.11.10.07:11:13 Info: Saving BSP settings file.
+2026.11.10.07:11:13 Info: Default memory regions will not be persisted in BSP Settings File.
+2026.11.10.07:11:13 Info: Generated file "/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/build/bsp/settings.bsp"
+2026.11.10.07:11:13 Info: Generating BSP files in "/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/build/bsp"
+2026.11.10.07:11:13 Info: Default memory regions will not be persisted in BSP Settings File.
+2026.11.10.07:11:13 Info: Generated file "/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/build/bsp/settings.bsp"
+2026.11.10.07:11:14 Info: Finished generating BSP files. Total time taken = 2 seconds
+>> Generando proyecto de aplicacion (CMake) ...
+2026.11.10.07:11:15 Info: Elf name is set to "hello.elf".
+2026.11.10.07:11:15 Info: Source file "hello_world.c" added from directory "/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/sw/src".
+2026.11.10.07:11:15 Info: "/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/build/app/CMakeLists.txt" was generated.
+>> Compilando ...
+make: Entering directory '/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/build/app/build'
+[  1%] Building ASM object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj
+[  2%] Building ASM object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj
+[  3%] Building ASM object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj
+[  4%] Building ASM object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj
+[  5%] Building ASM object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj
+[  6%] Building ASM object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj
+[  7%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj
+[  8%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj
+[  9%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj
+[ 10%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj
+[ 11%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj
+[ 12%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj
+[ 13%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj
+[ 14%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj
+[ 15%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj
+[ 16%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj
+[ 17%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj
+[ 18%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj
+[ 19%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj
+[ 20%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj
+[ 21%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj
+[ 22%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj
+[ 23%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj
+[ 24%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj
+[ 25%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj
+[ 26%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj
+[ 27%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj
+[ 28%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj
+[ 29%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj
+[ 30%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj
+[ 31%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj
+[ 32%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj
+[ 34%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj
+[ 35%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj
+[ 36%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj
+[ 37%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj
+[ 38%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj
+[ 39%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj
+[ 40%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj
+[ 41%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj
+[ 42%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj
+[ 43%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
+[ 44%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
+[ 45%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj
+[ 46%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj
+[ 47%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj
+[ 48%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj
+[ 49%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj
+[ 50%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj
+[ 51%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj
+[ 52%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj
+[ 53%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj
+[ 54%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj
+[ 55%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj
+[ 56%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj
+[ 57%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj
+[ 58%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj
+[ 59%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj
+[ 60%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj
+[ 61%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj
+[ 62%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj
+[ 63%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj
+[ 64%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj
+[ 65%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj
+[ 67%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj
+[ 68%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj
+[ 69%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj
+[ 70%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj
+[ 71%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj
+[ 72%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj
+[ 73%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj
+[ 74%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj
+[ 75%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj
+[ 76%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj
+[ 77%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj
+[ 78%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj
+[ 79%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj
+[ 80%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj
+[ 81%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj
+[ 82%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj
+[ 83%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj
+[ 84%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj
+[ 85%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj
+[ 86%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
+[ 87%] Building C object bsp/CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
+[ 88%] Building C object bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
+[ 89%] Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
+[ 90%] Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
+[ 91%] Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
+[ 92%] Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj
+[ 93%] Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
+[ 94%] Linking C static library libhal2_bsp.a
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hello.elf.dir/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/sw/src/hello_world.c.obj
+[ 96%] Linking C executable hello.elf
+[ 96%] Built target hello.elf
+[ 97%] Creating hello.elf.objdump.
+[ 97%] Built target create-objdump
+[ 98%] Reporting memory available for stack + heap in hello.elf.
+hello.elf
+ * 95.45 KB - Program size (code + initialized data).
+ * 154.32 KB - Free for stack + heap.
+[ 98%] Built target niosv-stack-report
+[100%] Creating ram.hex.
+[100%] Built target create-hex
+make: Leaving directory '/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/build/app/build'
+>> ram.hex copiado a /home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/mentor
+>> Listo. ELF en: /home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/build/app/build/hello.elf

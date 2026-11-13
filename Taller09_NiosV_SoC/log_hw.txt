@@ -1,0 +1,439 @@
+Entorno Nios V listo:
+  ALTERA_ROOT         = /home/jose_barquero/altera_lite/25.1std
+  SALT_LICENSE_SERVER = /home/jose_barquero/altera_lite/LR-182429_License.dat
+2026.11.10.07:09:18 Info: Doing: <b>qsys-script --script=build_system.tcl</b>
+2026.11.10.07:09:22 Info: create_system hello
+2026.11.10.07:09:22 Info: set_project_property DEVICE_FAMILY Cyclone V
+2026.11.10.07:09:22 Info: set_project_property DEVICE 5CSEMA5F31C6
+2026.11.10.07:09:22 Info: add_instance clk clock_source 
+2026.11.10.07:09:23 Info: add_instance cpu intel_niosv_m 
+2026.11.10.07:09:24 Info: add_instance ram altera_avalon_onchip_memory2 
+2026.11.10.07:09:25 Info: add_instance juart altera_avalon_jtag_uart 
+2026.11.10.07:09:25 Info: set_instance_parameter_value clk clockFrequency 50000000
+2026.11.10.07:09:25 Info: set_instance_parameter_value ram memorySize 262144
+2026.11.10.07:09:25 Info: set_instance_parameter_value ram initMemContent 1
+2026.11.10.07:09:25 Info: set_instance_parameter_value ram useNonDefaultInitFile 1
+2026.11.10.07:09:25 Info: set_instance_parameter_value ram initializationFileName ram.hex
+2026.11.10.07:09:25 Info: set_instance_parameter_value ram writable 1
+2026.11.10.07:09:25 Info: set_instance_parameter_value ram dualPort 0
+2026.11.10.07:09:25 Info: set_instance_parameter_value cpu resetSlave ram.s1
+2026.11.10.07:09:25 Info: set_instance_parameter_value cpu resetOffset 0
+2026.11.10.07:09:25 Info: set_instance_parameter_value cpu enableDebug 1
+2026.11.10.07:09:25 Info: add_connection clk.clk cpu.clk
+2026.11.10.07:09:25 Info: add_connection clk.clk ram.clk1
+2026.11.10.07:09:25 Info: add_connection clk.clk juart.clk
+2026.11.10.07:09:25 Info: add_connection clk.clk_reset cpu.reset
+2026.11.10.07:09:25 Info: add_connection clk.clk_reset ram.reset1
+2026.11.10.07:09:25 Info: add_connection clk.clk_reset juart.reset
+2026.11.10.07:09:25 Info: add_connection cpu.data_manager ram.s1
+2026.11.10.07:09:25 Info: add_connection cpu.instruction_manager ram.s1
+2026.11.10.07:09:25 Info: add_connection cpu.data_manager juart.avalon_jtag_slave
+2026.11.10.07:09:25 Info: add_connection cpu.data_manager cpu.dm_agent
+2026.11.10.07:09:25 Info: add_connection cpu.data_manager cpu.timer_sw_agent
+2026.11.10.07:09:26 Info: set_connection_parameter_value cpu.data_manager/ram.s1 baseAddress 0x00000000
+2026.11.10.07:09:26 Info: set_connection_parameter_value cpu.instruction_manager/ram.s1 baseAddress 0x00000000
+2026.11.10.07:09:26 Info: set_connection_parameter_value cpu.data_manager/juart.avalon_jtag_slave baseAddress 0x00040000
+2026.11.10.07:09:26 Info: set_connection_parameter_value cpu.data_manager/cpu.timer_sw_agent baseAddress 0x00040040
+2026.11.10.07:09:26 Info: set_connection_parameter_value cpu.data_manager/cpu.dm_agent baseAddress 0x00050000
+2026.11.10.07:09:26 Info: add_connection cpu.platform_irq_rx juart.irq
+2026.11.10.07:09:26 Info: set_connection_parameter_value cpu.platform_irq_rx/juart.irq irqNumber 1
+2026.11.10.07:09:26 Info: add_interface clk clock sink
+2026.11.10.07:09:26 Info: set_interface_property clk EXPORT_OF clk.clk_in
+2026.11.10.07:09:26 Info: add_interface reset reset sink
+2026.11.10.07:09:26 Info: set_interface_property reset EXPORT_OF clk.clk_in_reset
+2026.11.10.07:09:26 Info: add_instance pio_out altera_avalon_pio 
+2026.11.10.07:09:26 Info: set_instance_parameter_value pio_out direction Output
+2026.11.10.07:09:26 Info: set_instance_parameter_value pio_out width 8
+2026.11.10.07:09:26 Info: set_instance_parameter_value pio_out resetValue 0
+2026.11.10.07:09:26 Info: add_instance pio_in altera_avalon_pio 
+2026.11.10.07:09:26 Info: set_instance_parameter_value pio_in direction Input
+2026.11.10.07:09:26 Info: set_instance_parameter_value pio_in width 4
+2026.11.10.07:09:26 Info: add_connection clk.clk pio_out.clk
+2026.11.10.07:09:26 Info: add_connection clk.clk_reset pio_out.reset
+2026.11.10.07:09:26 Info: add_connection cpu.data_manager pio_out.s1
+2026.11.10.07:09:26 Info: set_connection_parameter_value cpu.data_manager/pio_out.s1 baseAddress 0x00040010
+2026.11.10.07:09:26 Info: add_connection clk.clk pio_in.clk
+2026.11.10.07:09:26 Info: add_connection clk.clk_reset pio_in.reset
+2026.11.10.07:09:26 Info: add_connection cpu.data_manager pio_in.s1
+2026.11.10.07:09:26 Info: set_connection_parameter_value cpu.data_manager/pio_in.s1 baseAddress 0x00040020
+2026.11.10.07:09:26 Info: add_interface pio_out conduit end
+2026.11.10.07:09:26 Info: set_interface_property pio_out EXPORT_OF pio_out.external_connection
+2026.11.10.07:09:26 Info: add_interface pio_in conduit end
+2026.11.10.07:09:26 Info: set_interface_property pio_in EXPORT_OF pio_in.external_connection
+2026.11.10.07:09:26 Info: save_system hello.qsys
+>> Generando RTL de sintesis + .sopcinfo ...
+2026.11.10.07:09:32 Info: Saving generation log to /home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/hello_generation.rpt
+2026.11.10.07:09:32 Info: Starting: <b>Create HDL design files for synthesis</b>
+2026.11.10.07:09:32 Info: qsys-generate /home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/hello.qsys --synthesis=VERILOG --output-directory=/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+2026.11.10.07:09:32 Info: Loading hw/hello.qsys
+2026.11.10.07:09:32 Info: Reading input file
+2026.11.10.07:09:32 Info: Adding clk [clock_source 25.1]
+2026.11.10.07:09:32 Info: Parameterizing module clk
+2026.11.10.07:09:32 Info: Adding cpu [intel_niosv_m 26.0.0]
+2026.11.10.07:09:32 Info: Parameterizing module cpu
+2026.11.10.07:09:32 Info: Adding juart [altera_avalon_jtag_uart 25.1]
+2026.11.10.07:09:32 Info: Parameterizing module juart
+2026.11.10.07:09:32 Info: Adding pio_in [altera_avalon_pio 25.1]
+2026.11.10.07:09:32 Info: Parameterizing module pio_in
+2026.11.10.07:09:32 Info: Adding pio_out [altera_avalon_pio 25.1]
+2026.11.10.07:09:32 Info: Parameterizing module pio_out
+2026.11.10.07:09:32 Info: Adding ram [altera_avalon_onchip_memory2 25.1]
+2026.11.10.07:09:32 Info: Parameterizing module ram
+2026.11.10.07:09:32 Info: Building connections
+2026.11.10.07:09:32 Info: Parameterizing connections
+2026.11.10.07:09:32 Info: Validating
+2026.11.10.07:09:32 Info: Done reading input file
+2026.11.10.07:09:33 Warning: hello.cpu: Properties (associatedClock) have been set on interface <b>reset</b> - in composed mode these are ignored
+2026.11.10.07:09:33 Warning: hello.cpu: Properties (associatedClock,associatedReset) have been set on interface <b>instruction_manager</b> - in composed mode these are ignored
+2026.11.10.07:09:33 Warning: hello.cpu: Properties (associatedClock,associatedReset) have been set on interface <b>data_manager</b> - in composed mode these are ignored
+2026.11.10.07:09:33 Info: hello.juart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+2026.11.10.07:09:33 Info: hello.pio_in: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+2026.11.10.07:09:33 Info: hello: Generating "<b>hello</b>" for QUARTUS_SYNTH
+2026.11.10.07:09:37 Info: cpu: "<b>hello</b>" instantiated <b>intel_niosv_m</b> "<b>cpu</b>"
+2026.11.10.07:09:37 Info: juart: "<b>hello</b>" instantiated <b>altera_avalon_jtag_uart</b> "<b>juart</b>"
+2026.11.10.07:09:37 Info: pio_in: Starting RTL generation for module 'hello_pio_in'
+2026.11.10.07:09:37 Info: pio_in:   Generation command is [exec /home/jose_barquero/altera_lite/25.1std/quartus/linux64/perl/bin/perl -I /home/jose_barquero/altera_lite/25.1std/quartus/linux64/perl/lib -I /home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/europa -I /home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin -I /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/common -I /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=hello_pio_in --dir=/tmp/alt0767_8866416650399014607.dir/0003_pio_in_gen/ --quartus_dir=/home/jose_barquero/altera_lite/25.1std/quartus --verilog --config=/tmp/alt0767_8866416650399014607.dir/0003_pio_in_gen//hello_pio_in_component_configuration.pl  --do_build_sim=0  ]
+2026.11.10.07:09:37 Info: pio_in: Done RTL generation for module 'hello_pio_in'
+2026.11.10.07:09:37 Info: pio_in: "<b>hello</b>" instantiated <b>altera_avalon_pio</b> "<b>pio_in</b>"
+2026.11.10.07:09:37 Info: pio_out: Starting RTL generation for module 'hello_pio_out'
+2026.11.10.07:09:37 Info: pio_out:   Generation command is [exec /home/jose_barquero/altera_lite/25.1std/quartus/linux64/perl/bin/perl -I /home/jose_barquero/altera_lite/25.1std/quartus/linux64/perl/lib -I /home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/europa -I /home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin -I /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/common -I /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=hello_pio_out --dir=/tmp/alt0767_8866416650399014607.dir/0004_pio_out_gen/ --quartus_dir=/home/jose_barquero/altera_lite/25.1std/quartus --verilog --config=/tmp/alt0767_8866416650399014607.dir/0004_pio_out_gen//hello_pio_out_component_configuration.pl  --do_build_sim=0  ]
+2026.11.10.07:09:37 Info: pio_out: Done RTL generation for module 'hello_pio_out'
+2026.11.10.07:09:37 Info: pio_out: "<b>hello</b>" instantiated <b>altera_avalon_pio</b> "<b>pio_out</b>"
+2026.11.10.07:09:37 Info: ram: Starting RTL generation for module 'hello_ram'
+2026.11.10.07:09:37 Info: ram:   Generation command is [exec /home/jose_barquero/altera_lite/25.1std/quartus/linux64/perl/bin/perl -I /home/jose_barquero/altera_lite/25.1std/quartus/linux64/perl/lib -I /home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/europa -I /home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin -I /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/common -I /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=hello_ram --dir=/tmp/alt0767_8866416650399014607.dir/0005_ram_gen/ --quartus_dir=/home/jose_barquero/altera_lite/25.1std/quartus --verilog --config=/tmp/alt0767_8866416650399014607.dir/0005_ram_gen//hello_ram_component_configuration.pl  --do_build_sim=0  ]
+2026.11.10.07:09:38 Info: ram: Done RTL generation for module 'hello_ram'
+2026.11.10.07:09:38 Info: ram: "<b>hello</b>" instantiated <b>altera_avalon_onchip_memory2</b> "<b>ram</b>"
+2026.11.10.07:09:38 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2026.11.10.07:09:38 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+2026.11.10.07:09:38 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+2026.11.10.07:09:39 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+2026.11.10.07:09:39 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+2026.11.10.07:09:39 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+2026.11.10.07:09:39 Info: mm_interconnect_0: "<b>hello</b>" instantiated <b>altera_mm_interconnect</b> "<b>mm_interconnect_0</b>"
+2026.11.10.07:09:39 Info: irq_mapper: "<b>hello</b>" instantiated <b>altera_irq_mapper</b> "<b>irq_mapper</b>"
+2026.11.10.07:09:39 Info: rst_controller: "<b>hello</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"
+2026.11.10.07:09:39 Info: niosv_reset_controller: "Generating: niosv_reset_controller"
+2026.11.10.07:09:39 Info: hart: "<b>cpu</b>" instantiated <b>intel_niosv_m_unit</b> "<b>hart</b>"
+2026.11.10.07:09:39 Info: timer_module: "<b>cpu</b>" instantiated <b>intel_niosv_timer_msip</b> "<b>timer_module</b>"
+2026.11.10.07:09:39 Info: dbg_mod: "<b>cpu</b>" instantiated <b>intel_niosv_dbg_mod</b> "<b>dbg_mod</b>"
+2026.11.10.07:09:39 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/synthesis/submodules/niosv_ram.sv</b>
+2026.11.10.07:09:39 Info: irq_mapper: "<b>cpu</b>" instantiated <b>altera_irq_mapper</b> "<b>irq_mapper</b>"
+2026.11.10.07:09:39 Info: juart_avalon_jtag_slave_translator: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_slave_translator</b> "<b>juart_avalon_jtag_slave_translator</b>"
+2026.11.10.07:09:39 Info: cpu_data_manager_agent: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_axi_master_ni</b> "<b>cpu_data_manager_agent</b>"
+2026.11.10.07:09:39 Info: juart_avalon_jtag_slave_agent: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_slave_agent</b> "<b>juart_avalon_jtag_slave_agent</b>"
+2026.11.10.07:09:39 Info: juart_avalon_jtag_slave_agent_rsp_fifo: "<b>mm_interconnect_0</b>" instantiated <b>altera_avalon_sc_fifo</b> "<b>juart_avalon_jtag_slave_agent_rsp_fifo</b>"
+2026.11.10.07:09:39 Info: router: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_router</b> "<b>router</b>"
+2026.11.10.07:09:39 Info: router_002: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_router</b> "<b>router_002</b>"
+2026.11.10.07:09:39 Info: router_004: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_router</b> "<b>router_004</b>"
+2026.11.10.07:09:39 Info: router_006: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_router</b> "<b>router_006</b>"
+2026.11.10.07:09:39 Info: cmd_demux: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_demux</b>"
+2026.11.10.07:09:39 Info: cmd_demux_002: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_demux_002</b>"
+2026.11.10.07:09:39 Info: cmd_mux: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>cmd_mux</b>"
+2026.11.10.07:09:39 Info: cmd_mux_002: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>cmd_mux_002</b>"
+2026.11.10.07:09:39 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/synthesis/submodules/altera_merlin_arbitrator.sv</b>
+2026.11.10.07:09:39 Info: rsp_demux: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>rsp_demux</b>"
+2026.11.10.07:09:39 Info: rsp_demux_002: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>rsp_demux_002</b>"
+2026.11.10.07:09:40 Info: rsp_mux: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>rsp_mux</b>"
+2026.11.10.07:09:40 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/synthesis/submodules/altera_merlin_arbitrator.sv</b>
+2026.11.10.07:09:40 Info: rsp_mux_002: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>rsp_mux_002</b>"
+2026.11.10.07:09:40 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/synthesis/submodules/altera_merlin_arbitrator.sv</b>
+2026.11.10.07:09:40 Info: avalon_st_adapter: "<b>mm_interconnect_0</b>" instantiated <b>altera_avalon_st_adapter</b> "<b>avalon_st_adapter</b>"
+2026.11.10.07:09:40 Info: niosv_reset_controller: "<b>hart</b>" instantiated <b>intel_niosv_m_unit</b> "<b>niosv_reset_controller</b>"
+2026.11.10.07:09:40 Info: error_adapter_0: "<b>avalon_st_adapter</b>" instantiated <b>error_adapter</b> "<b>error_adapter_0</b>"
+2026.11.10.07:09:40 Info: hello: Done "<b>hello</b>" with 32 modules, 88 files
+2026.11.10.07:09:40 Info: qsys-generate succeeded.
+2026.11.10.07:09:40 Info: Finished: <b>Create HDL design files for synthesis</b>
+>> Generando testbench de simulacion (Verilog) ...
+2026.11.10.07:09:46 Info: Saving generation log to /home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/hello_generation.rpt
+2026.11.10.07:09:46 Info: Starting: <b>Create testbench Platform Designer system</b>
+2026.11.10.07:09:46 Info: /home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello.ipx
+2026.11.10.07:09:46 Info: qsys-generate /home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/hello.qsys --testbench=STANDARD --output-directory=/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw --family="Cyclone V" --part=5CSEMA5F31C6
+2026.11.10.07:09:46 Info: Loading hw/hello.qsys
+2026.11.10.07:09:46 Info: Reading input file
+2026.11.10.07:09:46 Info: Adding clk [clock_source 25.1]
+2026.11.10.07:09:46 Info: Parameterizing module clk
+2026.11.10.07:09:46 Info: Adding cpu [intel_niosv_m 26.0.0]
+2026.11.10.07:09:46 Info: Parameterizing module cpu
+2026.11.10.07:09:46 Info: Adding juart [altera_avalon_jtag_uart 25.1]
+2026.11.10.07:09:46 Info: Parameterizing module juart
+2026.11.10.07:09:46 Info: Adding pio_in [altera_avalon_pio 25.1]
+2026.11.10.07:09:46 Info: Parameterizing module pio_in
+2026.11.10.07:09:46 Info: Adding pio_out [altera_avalon_pio 25.1]
+2026.11.10.07:09:46 Info: Parameterizing module pio_out
+2026.11.10.07:09:46 Info: Adding ram [altera_avalon_onchip_memory2 25.1]
+2026.11.10.07:09:46 Info: Parameterizing module ram
+2026.11.10.07:09:46 Info: Building connections
+2026.11.10.07:09:46 Info: Parameterizing connections
+2026.11.10.07:09:46 Info: Validating
+2026.11.10.07:09:46 Info: Done reading input file
+2026.11.10.07:09:46 Warning: hello.cpu: Properties (associatedClock) have been set on interface <b>reset</b> - in composed mode these are ignored
+2026.11.10.07:09:46 Warning: hello.cpu: Properties (associatedClock,associatedReset) have been set on interface <b>instruction_manager</b> - in composed mode these are ignored
+2026.11.10.07:09:46 Warning: hello.cpu: Properties (associatedClock,associatedReset) have been set on interface <b>data_manager</b> - in composed mode these are ignored
+2026.11.10.07:09:46 Info: hello.juart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+2026.11.10.07:09:46 Info: hello.pio_in: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+2026.11.10.07:09:47 Info: qsys-generate succeeded.
+2026.11.10.07:09:47 Info: Info: Loading IP catalog for testbench.
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: Reading index <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/root_components.ipx</b>
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/root_components.ipx</b>: Loading now from components.ipx
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: Reading index <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/ip_component_categories.ipx</b>
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/ip_component_categories.ipx</b> described 0 plugins, 0 paths, in 0.01 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/ip_component_categories.ipx</b> matched 1 files in 0.01 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/ip/**/*</b> matched 0 files in 0.00 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: Reading index <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello.ipx</b>
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/*</b> matched 8 files in 0.00 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/ip/**/*</b> matched 0 files in 0.00 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/*/*</b> matched 8 files in 0.00 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello.ipx</b> described 0 plugins, 3 paths, in 0.01 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/*</b> matched 1 files in 0.01 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/*/*</b> matched 0 files in 0.00 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/.altera.quartus/ip/25.1/**/*</b> matched 0 files in 0.00 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/*</b> matched 0 files in 0.00 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/*</b> matched 0 files in 0.00 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/*</b> matched 0 files in 0.00 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: Reading index <b>/home/jose_barquero/altera_lite/25.1std/ip/altera/altera_components.ipx</b>
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/ip/altera/altera_components.ipx</b> described 1938 plugins, 0 paths, in 0.14 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/ip/**/*</b> matched 109 files in 0.14 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/ip/**/*</b> matched 0 files in 0.00 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: Reading index <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/builtin.ipx</b>
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/builtin.ipx</b> described 87 plugins, 0 paths, in 0.01 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/**/*</b> matched 9 files in 0.01 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/quartus/common/librarian/factories/**/*</b> matched 0 files in 0.00 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/$IP_IPX_PATH</b> matched 1 files in 0.00 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/root_components.ipx</b> described 0 plugins, 13 paths, in 0.17 seconds
+2026.11.10.07:09:47 Info: <html><div WIDTH=500>Info: <b>/home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/root_components.ipx</b> matched 1 files in 0.17 seconds
+2026.11.10.07:09:48 Info: Info: Running script /home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/tbgen.tcl
+2026.11.10.07:09:48 Info: send_message Info TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+2026.11.10.07:09:48 Info: Info: TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+2026.11.10.07:09:48 Info: get_module_property NAME
+2026.11.10.07:09:48 Info: send_message Info TB_Gen: System design is: hello
+2026.11.10.07:09:48 Info: Info: TB_Gen: System design is: hello
+2026.11.10.07:09:48 Info: get_interfaces 
+2026.11.10.07:09:48 Info: get_connections 
+2026.11.10.07:09:48 Info: get_interface_property clk EXPORT_OF
+2026.11.10.07:09:48 Info: get_instance_property clk CLASS_NAME
+2026.11.10.07:09:48 Info: get_instance_assignment clk testbench.partner.map.clk_in
+2026.11.10.07:09:48 Info: get_interface_property pio_in EXPORT_OF
+2026.11.10.07:09:48 Info: get_instance_property pio_in CLASS_NAME
+2026.11.10.07:09:48 Info: get_instance_assignment pio_in testbench.partner.map.external_connection
+2026.11.10.07:09:48 Info: get_interface_property pio_out EXPORT_OF
+2026.11.10.07:09:48 Info: get_instance_property pio_out CLASS_NAME
+2026.11.10.07:09:48 Info: get_instance_assignment pio_out testbench.partner.map.external_connection
+2026.11.10.07:09:48 Info: get_interface_property reset EXPORT_OF
+2026.11.10.07:09:48 Info: get_instance_property clk CLASS_NAME
+2026.11.10.07:09:48 Info: get_instance_assignment clk testbench.partner.map.clk_in_reset
+2026.11.10.07:09:48 Info: send_message Info TB_Gen: Creating testbench system : hello_tb with all standard BFMs
+2026.11.10.07:09:48 Info: Info: TB_Gen: Creating testbench system : hello_tb with all standard BFMs
+2026.11.10.07:09:48 Info: create_system hello_tb
+2026.11.10.07:09:48 Info: add_instance hello_inst hello 
+2026.11.10.07:09:49 Info: set_use_testbench_naming_pattern true hello
+2026.11.10.07:09:49 Info: get_instance_interfaces hello_inst
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst clk CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst pio_in CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst pio_out CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst reset CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst clk CLASS_NAME
+2026.11.10.07:09:49 Info: send_message Info TB_Gen: clock_sink found: clk
+2026.11.10.07:09:49 Info: Info: TB_Gen: clock_sink found: clk
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst clk CLASS_NAME
+2026.11.10.07:09:49 Info: add_instance hello_inst_clk_bfm altera_avalon_clock_source 
+2026.11.10.07:09:49 Info: get_instance_property hello_inst_clk_bfm CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_parameter_value hello_inst clk clockRate
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_clk_bfm CLOCK_RATE 50000000.0
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_clk_bfm CLOCK_UNIT 1
+2026.11.10.07:09:49 Info: get_instance_property hello_inst_clk_bfm CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst clk CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interfaces hello_inst_clk_bfm
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst_clk_bfm clk CLASS_NAME
+2026.11.10.07:09:49 Info: add_connection hello_inst_clk_bfm.clk hello_inst.clk
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst reset CLASS_NAME
+2026.11.10.07:09:49 Info: send_message Info TB_Gen: reset_sink found: reset
+2026.11.10.07:09:49 Info: Info: TB_Gen: reset_sink found: reset
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst reset CLASS_NAME
+2026.11.10.07:09:49 Info: add_instance hello_inst_reset_bfm altera_avalon_reset_source 
+2026.11.10.07:09:49 Info: get_instance_property hello_inst_reset_bfm CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_ports hello_inst reset
+2026.11.10.07:09:49 Info: get_instance_interface_port_property hello_inst reset reset_reset_n ROLE
+2026.11.10.07:09:49 Info: get_instance_interface_port_property hello_inst reset reset_reset_n ROLE
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_reset_bfm ASSERT_HIGH_RESET 0
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_reset_bfm INITIAL_RESET_CYCLES 50
+2026.11.10.07:09:49 Info: get_instance_property hello_inst_reset_bfm CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interfaces hello_inst_reset_bfm
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst_reset_bfm clk CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst_reset_bfm reset CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_property hello_inst_reset_bfm CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_parameter_value hello_inst reset associatedClock
+2026.11.10.07:09:49 Info: get_instance_interfaces hello_inst_clk_bfm
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst_clk_bfm clk CLASS_NAME
+2026.11.10.07:09:49 Info: send_message Warning TB_Gen: hello_inst_reset_bfm is not associated to any clock; connecting hello_inst_reset_bfm to 'hello_inst_clk_bfm.clk'
+2026.11.10.07:09:49 Warning: Warning: TB_Gen: hello_inst_reset_bfm is not associated to any clock; connecting hello_inst_reset_bfm to 'hello_inst_clk_bfm.clk'
+2026.11.10.07:09:49 Info: add_connection hello_inst_clk_bfm.clk hello_inst_reset_bfm.clk
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst reset CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interfaces hello_inst_reset_bfm
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst_reset_bfm clk CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst_reset_bfm reset CLASS_NAME
+2026.11.10.07:09:49 Info: add_connection hello_inst_reset_bfm.reset hello_inst.reset
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst pio_in CLASS_NAME
+2026.11.10.07:09:49 Info: send_message Info TB_Gen: conduit_end found: pio_in
+2026.11.10.07:09:49 Info: Info: TB_Gen: conduit_end found: pio_in
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst pio_in CLASS_NAME
+2026.11.10.07:09:49 Info: add_instance hello_inst_pio_in_bfm altera_conduit_bfm 
+2026.11.10.07:09:49 Info: get_instance_property hello_inst_pio_in_bfm CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_parameter_value hello_inst pio_in associatedClock
+2026.11.10.07:09:49 Info: get_instance_interface_parameter_value hello_inst pio_in associatedReset
+2026.11.10.07:09:49 Info: get_instance_interface_ports hello_inst pio_in
+2026.11.10.07:09:49 Info: get_instance_interface_port_property hello_inst pio_in pio_in_export ROLE
+2026.11.10.07:09:49 Info: get_instance_interface_port_property hello_inst pio_in pio_in_export WIDTH
+2026.11.10.07:09:49 Info: get_instance_interface_port_property hello_inst pio_in pio_in_export DIRECTION
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_pio_in_bfm CLOCKED_SIGNAL 0
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_pio_in_bfm ENABLE_RESET 0
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_pio_in_bfm SIGNAL_ROLES export
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_pio_in_bfm SIGNAL_WIDTHS 4
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_pio_in_bfm SIGNAL_DIRECTIONS output
+2026.11.10.07:09:49 Info: get_instance_property hello_inst_pio_in_bfm CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst pio_in CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interfaces hello_inst_pio_in_bfm
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst_pio_in_bfm conduit CLASS_NAME
+2026.11.10.07:09:49 Info: add_connection hello_inst_pio_in_bfm.conduit hello_inst.pio_in
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst pio_out CLASS_NAME
+2026.11.10.07:09:49 Info: send_message Info TB_Gen: conduit_end found: pio_out
+2026.11.10.07:09:49 Info: Info: TB_Gen: conduit_end found: pio_out
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst pio_out CLASS_NAME
+2026.11.10.07:09:49 Info: add_instance hello_inst_pio_out_bfm altera_conduit_bfm 
+2026.11.10.07:09:49 Info: get_instance_property hello_inst_pio_out_bfm CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_parameter_value hello_inst pio_out associatedClock
+2026.11.10.07:09:49 Info: get_instance_interface_parameter_value hello_inst pio_out associatedReset
+2026.11.10.07:09:49 Info: get_instance_interface_ports hello_inst pio_out
+2026.11.10.07:09:49 Info: get_instance_interface_port_property hello_inst pio_out pio_out_export ROLE
+2026.11.10.07:09:49 Info: get_instance_interface_port_property hello_inst pio_out pio_out_export WIDTH
+2026.11.10.07:09:49 Info: get_instance_interface_port_property hello_inst pio_out pio_out_export DIRECTION
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_pio_out_bfm CLOCKED_SIGNAL 0
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_pio_out_bfm ENABLE_RESET 0
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_pio_out_bfm SIGNAL_ROLES export
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_pio_out_bfm SIGNAL_WIDTHS 8
+2026.11.10.07:09:49 Info: set_instance_parameter_value hello_inst_pio_out_bfm SIGNAL_DIRECTIONS input
+2026.11.10.07:09:49 Info: get_instance_property hello_inst_pio_out_bfm CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst pio_out CLASS_NAME
+2026.11.10.07:09:49 Info: get_instance_interfaces hello_inst_pio_out_bfm
+2026.11.10.07:09:49 Info: get_instance_interface_property hello_inst_pio_out_bfm conduit CLASS_NAME
+2026.11.10.07:09:49 Info: add_connection hello_inst_pio_out_bfm.conduit hello_inst.pio_out
+2026.11.10.07:09:49 Info: send_message Info TB_Gen: Saving testbench system: hello_tb.qsys
+2026.11.10.07:09:49 Info: Info: TB_Gen: Saving testbench system: hello_tb.qsys
+2026.11.10.07:09:49 Info: save_system hello_tb.qsys
+2026.11.10.07:09:49 Info: send_message Info TB_Gen: TBGEN SUCCESSFUL
+2026.11.10.07:09:49 Info: Info: TB_Gen: TBGEN SUCCESSFUL
+2026.11.10.07:09:49 Info: Info: Testbench system: /home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello_tb.qsys
+2026.11.10.07:09:49 Info: Info: Done
+2026.11.10.07:09:49 Info: qsys-generate /home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/hello.qsys --simulation=VERILOG --allow-mixed-language-simulation --testbench=STANDARD --testbench-simulation=VERILOG --allow-mixed-language-testbench-simulation --output-directory=/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello_tb/simulation --family="Cyclone V" --part=5CSEMA5F31C6
+2026.11.10.07:09:49 Info: Loading testbench/hello_tb.qsys
+2026.11.10.07:09:49 Info: Reading input file
+2026.11.10.07:09:49 Info: Adding hello_inst [hello 1.0]
+2026.11.10.07:09:49 Info: Parameterizing module hello_inst
+2026.11.10.07:09:49 Info: Adding hello_inst_clk_bfm [altera_avalon_clock_source 25.1]
+2026.11.10.07:09:49 Info: Parameterizing module hello_inst_clk_bfm
+2026.11.10.07:09:49 Info: Adding hello_inst_pio_in_bfm [altera_conduit_bfm 25.1]
+2026.11.10.07:09:49 Info: Parameterizing module hello_inst_pio_in_bfm
+2026.11.10.07:09:49 Info: Adding hello_inst_pio_out_bfm [altera_conduit_bfm 25.1]
+2026.11.10.07:09:49 Info: Parameterizing module hello_inst_pio_out_bfm
+2026.11.10.07:09:49 Info: Adding hello_inst_reset_bfm [altera_avalon_reset_source 25.1]
+2026.11.10.07:09:49 Info: Parameterizing module hello_inst_reset_bfm
+2026.11.10.07:09:49 Info: Building connections
+2026.11.10.07:09:49 Info: Parameterizing connections
+2026.11.10.07:09:49 Info: Validating
+2026.11.10.07:09:49 Info: Done reading input file
+2026.11.10.07:09:50 Warning: hello_tb.hello_inst.cpu: Properties (associatedClock) have been set on interface <b>reset</b> - in composed mode these are ignored
+2026.11.10.07:09:50 Warning: hello_tb.hello_inst.cpu: Properties (associatedClock,associatedReset) have been set on interface <b>instruction_manager</b> - in composed mode these are ignored
+2026.11.10.07:09:50 Warning: hello_tb.hello_inst.cpu: Properties (associatedClock,associatedReset) have been set on interface <b>data_manager</b> - in composed mode these are ignored
+2026.11.10.07:09:50 Info: hello_tb.hello_inst.juart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+2026.11.10.07:09:50 Info: hello_tb.hello_inst.pio_in: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+2026.11.10.07:09:50 Info: hello_tb.hello_inst_clk_bfm: Elaborate: altera_clock_source
+2026.11.10.07:09:50 Info: hello_tb.hello_inst_clk_bfm:            $Revision: #1 $
+2026.11.10.07:09:50 Info: hello_tb.hello_inst_clk_bfm:            $Date: 2025/03/10 $
+2026.11.10.07:09:50 Info: hello_tb.hello_inst_reset_bfm: Elaborate: altera_reset_source
+2026.11.10.07:09:50 Info: hello_tb.hello_inst_reset_bfm:            $Revision: #1 $
+2026.11.10.07:09:50 Info: hello_tb.hello_inst_reset_bfm:            $Date: 2025/03/10 $
+2026.11.10.07:09:50 Info: hello_tb.hello_inst_reset_bfm: Reset is negatively asserted.
+2026.11.10.07:09:50 Info: hello_tb: Generating "<b>hello_tb</b>" for SIM_VERILOG
+2026.11.10.07:09:54 Info: hello_inst: "<b>hello_tb</b>" instantiated <b>hello</b> "<b>hello_inst</b>"
+2026.11.10.07:09:54 Info: hello_inst_clk_bfm: "<b>hello_tb</b>" instantiated <b>altera_avalon_clock_source</b> "<b>hello_inst_clk_bfm</b>"
+2026.11.10.07:09:54 Info: hello_inst_pio_in_bfm: "<b>hello_tb</b>" instantiated <b>altera_conduit_bfm</b> "<b>hello_inst_pio_in_bfm</b>"
+2026.11.10.07:09:54 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello_tb/simulation/submodules/verbosity_pkg.sv</b>
+2026.11.10.07:09:54 Info: hello_inst_pio_out_bfm: "<b>hello_tb</b>" instantiated <b>altera_conduit_bfm</b> "<b>hello_inst_pio_out_bfm</b>"
+2026.11.10.07:09:54 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello_tb/simulation/submodules/verbosity_pkg.sv</b>
+2026.11.10.07:09:54 Info: hello_inst_reset_bfm: "<b>hello_tb</b>" instantiated <b>altera_avalon_reset_source</b> "<b>hello_inst_reset_bfm</b>"
+2026.11.10.07:09:54 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello_tb/simulation/submodules/verbosity_pkg.sv</b>
+2026.11.10.07:09:54 Info: cpu: "<b>hello_inst</b>" instantiated <b>intel_niosv_m</b> "<b>cpu</b>"
+2026.11.10.07:09:54 Info: juart: "<b>hello_inst</b>" instantiated <b>altera_avalon_jtag_uart</b> "<b>juart</b>"
+2026.11.10.07:09:54 Info: pio_in: Starting RTL generation for module 'hello_pio_in'
+2026.11.10.07:09:54 Info: pio_in:   Generation command is [exec /home/jose_barquero/altera_lite/25.1std/quartus/linux64/perl/bin/perl -I /home/jose_barquero/altera_lite/25.1std/quartus/linux64/perl/lib -I /home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/europa -I /home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin -I /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/common -I /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=hello_pio_in --dir=/tmp/alt0767_57187711983767853.dir/0007_pio_in_gen/ --quartus_dir=/home/jose_barquero/altera_lite/25.1std/quartus --verilog --config=/tmp/alt0767_57187711983767853.dir/0007_pio_in_gen//hello_pio_in_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt0767_57187711983767853.dir/0007_pio_in_gen/  ]
+2026.11.10.07:09:54 Info: pio_in: Done RTL generation for module 'hello_pio_in'
+2026.11.10.07:09:54 Info: pio_in: "<b>hello_inst</b>" instantiated <b>altera_avalon_pio</b> "<b>pio_in</b>"
+2026.11.10.07:09:54 Info: pio_out: Starting RTL generation for module 'hello_pio_out'
+2026.11.10.07:09:54 Info: pio_out:   Generation command is [exec /home/jose_barquero/altera_lite/25.1std/quartus/linux64/perl/bin/perl -I /home/jose_barquero/altera_lite/25.1std/quartus/linux64/perl/lib -I /home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/europa -I /home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin -I /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/common -I /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=hello_pio_out --dir=/tmp/alt0767_57187711983767853.dir/0008_pio_out_gen/ --quartus_dir=/home/jose_barquero/altera_lite/25.1std/quartus --verilog --config=/tmp/alt0767_57187711983767853.dir/0008_pio_out_gen//hello_pio_out_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt0767_57187711983767853.dir/0008_pio_out_gen/  ]
+2026.11.10.07:09:54 Info: pio_out: Done RTL generation for module 'hello_pio_out'
+2026.11.10.07:09:54 Info: pio_out: "<b>hello_inst</b>" instantiated <b>altera_avalon_pio</b> "<b>pio_out</b>"
+2026.11.10.07:09:54 Info: ram: Starting RTL generation for module 'hello_ram'
+2026.11.10.07:09:54 Info: ram:   Generation command is [exec /home/jose_barquero/altera_lite/25.1std/quartus/linux64/perl/bin/perl -I /home/jose_barquero/altera_lite/25.1std/quartus/linux64/perl/lib -I /home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin/europa -I /home/jose_barquero/altera_lite/25.1std/quartus/sopc_builder/bin -I /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/common -I /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/jose_barquero/altera_lite/25.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=hello_ram --dir=/tmp/alt0767_57187711983767853.dir/0009_ram_gen/ --quartus_dir=/home/jose_barquero/altera_lite/25.1std/quartus --verilog --config=/tmp/alt0767_57187711983767853.dir/0009_ram_gen//hello_ram_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt0767_57187711983767853.dir/0009_ram_gen/  ]
+2026.11.10.07:09:54 Info: ram: Done RTL generation for module 'hello_ram'
+2026.11.10.07:09:54 Info: ram: "<b>hello_inst</b>" instantiated <b>altera_avalon_onchip_memory2</b> "<b>ram</b>"
+2026.11.10.07:09:55 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+2026.11.10.07:09:55 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+2026.11.10.07:09:55 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+2026.11.10.07:09:55 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+2026.11.10.07:09:55 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+2026.11.10.07:09:55 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+2026.11.10.07:09:56 Info: mm_interconnect_0: "<b>hello_inst</b>" instantiated <b>altera_mm_interconnect</b> "<b>mm_interconnect_0</b>"
+2026.11.10.07:09:56 Info: irq_mapper: "<b>hello_inst</b>" instantiated <b>altera_irq_mapper</b> "<b>irq_mapper</b>"
+2026.11.10.07:09:56 Info: rst_controller: "<b>hello_inst</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"
+2026.11.10.07:09:56 Info: niosv_reset_controller: "Generating: niosv_reset_controller"
+2026.11.10.07:09:56 Info: hart: "<b>cpu</b>" instantiated <b>intel_niosv_m_unit</b> "<b>hart</b>"
+2026.11.10.07:09:56 Info: timer_module: "<b>cpu</b>" instantiated <b>intel_niosv_timer_msip</b> "<b>timer_module</b>"
+2026.11.10.07:09:56 Info: dbg_mod: "<b>cpu</b>" instantiated <b>intel_niosv_dbg_mod</b> "<b>dbg_mod</b>"
+2026.11.10.07:09:56 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello_tb/simulation/submodules/aldec/niosv_ram.sv</b>
+2026.11.10.07:09:56 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello_tb/simulation/submodules/cadence/niosv_ram.sv</b>
+2026.11.10.07:09:56 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello_tb/simulation/submodules/mentor/niosv_ram.sv</b>
+2026.11.10.07:09:56 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello_tb/simulation/submodules/synopsys/niosv_ram.sv</b>
+2026.11.10.07:09:56 Info: irq_mapper: "<b>cpu</b>" instantiated <b>altera_irq_mapper</b> "<b>irq_mapper</b>"
+2026.11.10.07:09:56 Info: juart_avalon_jtag_slave_translator: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_slave_translator</b> "<b>juart_avalon_jtag_slave_translator</b>"
+2026.11.10.07:09:56 Info: cpu_data_manager_agent: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_axi_master_ni</b> "<b>cpu_data_manager_agent</b>"
+2026.11.10.07:09:56 Info: juart_avalon_jtag_slave_agent: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_slave_agent</b> "<b>juart_avalon_jtag_slave_agent</b>"
+2026.11.10.07:09:56 Info: juart_avalon_jtag_slave_agent_rsp_fifo: "<b>mm_interconnect_0</b>" instantiated <b>altera_avalon_sc_fifo</b> "<b>juart_avalon_jtag_slave_agent_rsp_fifo</b>"
+2026.11.10.07:09:56 Info: router: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_router</b> "<b>router</b>"
+2026.11.10.07:09:56 Info: router_002: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_router</b> "<b>router_002</b>"
+2026.11.10.07:09:56 Info: router_004: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_router</b> "<b>router_004</b>"
+2026.11.10.07:09:56 Info: router_006: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_router</b> "<b>router_006</b>"
+2026.11.10.07:09:56 Info: cmd_demux: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_demux</b>"
+2026.11.10.07:09:56 Info: cmd_demux_002: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_demux_002</b>"
+2026.11.10.07:09:56 Info: cmd_mux: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>cmd_mux</b>"
+2026.11.10.07:09:56 Info: cmd_mux_002: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>cmd_mux_002</b>"
+2026.11.10.07:09:56 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello_tb/simulation/submodules/altera_merlin_arbitrator.sv</b>
+2026.11.10.07:09:56 Info: rsp_demux: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>rsp_demux</b>"
+2026.11.10.07:09:56 Info: rsp_demux_002: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>rsp_demux_002</b>"
+2026.11.10.07:09:56 Info: rsp_mux: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>rsp_mux</b>"
+2026.11.10.07:09:56 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello_tb/simulation/submodules/altera_merlin_arbitrator.sv</b>
+2026.11.10.07:09:56 Info: rsp_mux_002: "<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>rsp_mux_002</b>"
+2026.11.10.07:09:56 Info: Reusing file <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/hello_tb/simulation/submodules/altera_merlin_arbitrator.sv</b>
+2026.11.10.07:09:56 Info: avalon_st_adapter: "<b>mm_interconnect_0</b>" instantiated <b>altera_avalon_st_adapter</b> "<b>avalon_st_adapter</b>"
+2026.11.10.07:09:56 Info: niosv_reset_controller: "<b>hart</b>" instantiated <b>intel_niosv_m_unit</b> "<b>niosv_reset_controller</b>"
+2026.11.10.07:09:56 Info: error_adapter_0: "<b>avalon_st_adapter</b>" instantiated <b>error_adapter</b> "<b>error_adapter_0</b>"
+2026.11.10.07:09:56 Info: hello_tb: Done "<b>hello_tb</b>" with 37 modules, 211 files
+2026.11.10.07:09:56 Info: qsys-generate succeeded.
+2026.11.10.07:09:56 Info: sim-script-gen --spd=/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/hello_tb.spd --output-directory=/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/ --use-relative-paths=true
+2026.11.10.07:09:56 Info: Doing: <b>ip-make-simscript --spd=/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/hello_tb.spd --output-directory=/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/ --use-relative-paths=true</b>
+2026.11.10.07:10:05 Info: Generating the following file(s) for <b>VCS</b> simulator in <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/</b> directory:
+2026.11.10.07:10:05 Info: 	<b>synopsys/vcs/vcs_setup.sh</b>
+2026.11.10.07:10:05 Info: Generating the following file(s) for <b>RIVIERA</b> simulator in <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/</b> directory:
+2026.11.10.07:10:05 Info: 	<b>aldec/rivierapro_setup.tcl</b>
+2026.11.10.07:10:05 Info: Generating the following file(s) for <b>MODELSIM</b> simulator in <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/</b> directory:
+2026.11.10.07:10:05 Info: 	<b>mentor/msim_setup.tcl</b>
+2026.11.10.07:10:05 Info: Generating the following file(s) for <b>XCELIUM</b> simulator in <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/</b> directory:
+2026.11.10.07:10:05 Info: 	<b>xcelium/cds.lib</b>
+2026.11.10.07:10:05 Info: 	<b>xcelium/hdl.var</b>
+2026.11.10.07:10:05 Info: 	<b>xcelium/xcelium_setup.sh</b>
+2026.11.10.07:10:05 Info: 	<b>36 .cds.lib files</b> in <b>xcelium/cds_libs/</b> directory
+2026.11.10.07:10:05 Info: Generating the following file(s) for <b>VCSMX</b> simulator in <b>/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/</b> directory:
+2026.11.10.07:10:05 Info: 	<b>synopsys/vcsmx/synopsys_sim.setup</b>
+2026.11.10.07:10:05 Info: 	<b>synopsys/vcsmx/vcsmx_setup.sh</b>
+2026.11.10.07:10:05 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/.
+2026.11.10.07:10:05 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+2026.11.10.07:10:05 Info: Finished: <b>Create testbench Platform Designer system</b>
+>> Listo. .sopcinfo en: /home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/hello.sopcinfo

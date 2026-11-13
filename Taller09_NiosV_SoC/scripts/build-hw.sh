@@ -13,7 +13,7 @@ cd "$HERE/hw"
 
 # Si modifico el sistema con el script Tcl (en vez de la GUI), regenere el
 # .qsys descomentando la linea siguiente:
-# qsys-script --script=build_system.tcl
+qsys-script --script=build_system.tcl
 
 echo ">> Generando RTL de sintesis + .sopcinfo ..."
 qsys-generate hello.qsys --synthesis=VERILOG     --output-directory="$HERE/hw/gen"

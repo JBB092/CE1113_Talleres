@@ -57,4 +57,29 @@ set_interface_property clk EXPORT_OF clk.clk_in
 add_interface reset reset sink
 set_interface_property reset EXPORT_OF clk.clk_in_reset
 
+
+add_instance pio_out altera_avalon_pio
+set_instance_parameter_value pio_out direction {Output}
+set_instance_parameter_value pio_out width {8}
+set_instance_parameter_value pio_out resetValue {0}
+
+add_instance pio_in altera_avalon_pio
+set_instance_parameter_value pio_in direction {Input}
+set_instance_parameter_value pio_in width {4}
+
+add_connection clk.clk pio_out.clk
+add_connection clk.clk_reset pio_out.reset
+add_connection cpu.data_manager pio_out.s1
+set_connection_parameter_value cpu.data_manager/pio_out.s1 baseAddress 0x00040010
+
+add_connection clk.clk pio_in.clk
+add_connection clk.clk_reset pio_in.reset
+add_connection cpu.data_manager pio_in.s1
+set_connection_parameter_value cpu.data_manager/pio_in.s1 baseAddress 0x00040020
+
+add_interface pio_out conduit end
+set_interface_property pio_out EXPORT_OF pio_out.external_connection
+add_interface pio_in conduit end
+set_interface_property pio_in EXPORT_OF pio_in.external_connection
+
 save_system hello.qsys

@@ -1,0 +1,1084 @@
+Entorno Nios V listo:
+  ALTERA_ROOT         = /home/jose_barquero/altera_lite/25.1std
+  SALT_LICENSE_SERVER = /home/jose_barquero/altera_lite/LR-182429_License.dat
+Reading pref.tcl
+
+# 2025.2
+
+# set USER_DEFINED_ELAB_OPTIONS {-voptargs=+acc}
+# -voptargs=+acc
+#  source msim_setup.tcl
+# [exec] file_copy
+# List Of Command Line Aliases
+# 
+# file_copy                                         -- Copy ROM/RAM files to simulation directory
+# 
+# dev_com                                           -- Compile device library files
+# 
+# com                                               -- Compile the design files in correct order
+# 
+# elab                                              -- Elaborate top level design
+# 
+# elab_debug                                        -- Elaborate the top level design with -voptargs=+acc option
+# 
+# ld                                                -- Compile all the design files and elaborate the top level design
+# 
+# ld_debug                                          -- Compile all the design files and elaborate the top level design with -voptargs=+acc
+# 
+# 
+# 
+# List Of Variables
+# 
+# TOP_LEVEL_NAME                                    -- Top level module name.
+#                                                      For most designs, this should be overridden
+#                                                      to enable the elab/elab_debug aliases.
+# 
+# SYSTEM_INSTANCE_NAME                              -- Instantiated system module name inside top level module.
+# 
+# QSYS_SIMDIR                                       -- Platform Designer base simulation directory.
+# 
+# QUARTUS_INSTALL_DIR                               -- Quartus installation directory.
+# 
+# USER_DEFINED_COMPILE_OPTIONS                      -- User-defined compile options, added to com/dev_com aliases.
+# 
+# USER_DEFINED_ELAB_OPTIONS                         -- User-defined elaboration options, added to elab/elab_debug aliases.
+# 
+# USER_DEFINED_VHDL_COMPILE_OPTIONS                 -- User-defined vhdl compile options, added to com/dev_com aliases.
+# 
+# USER_DEFINED_VERILOG_COMPILE_OPTIONS              -- User-defined verilog compile options, added to com/dev_com aliases.
+#  file_copy
+# [exec] file_copy
+#  ld
+# [exec] dev_com
+# [exec] com
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:21 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/verbosity_pkg.sv -work altera_common_sv_packages 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling package verbosity_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:43:21 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:21 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv -L altera_common_sv_packages -work error_adapter_0 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 21:43:21 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:21 on Nov 12,2026
+# vlog ./../hello_tb/simulation/submodules/niosv_reset_controller.v -work niosv_reset_controller 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module niosv_reset_controller
+# 
+# Top level modules:
+# 	niosv_reset_controller
+# End time: 21:43:21 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:21 on Nov 12,2026
+# vlog ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_avalon_st_adapter.v -work avalon_st_adapter 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_avalon_st_adapter
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_avalon_st_adapter
+# End time: 21:43:21 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:21 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_rsp_mux_002.sv -L altera_common_sv_packages -work rsp_mux_002 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_rsp_mux_002
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_rsp_mux_002
+# End time: 21:43:22 on Nov 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:22 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_merlin_arbitrator.sv -L altera_common_sv_packages -work rsp_mux_002 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 21:43:22 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:22 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_rsp_mux.sv -L altera_common_sv_packages -work rsp_mux 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_rsp_mux
+# End time: 21:43:22 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:22 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_merlin_arbitrator.sv -L altera_common_sv_packages -work rsp_mux 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 21:43:22 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:22 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_rsp_demux_002.sv -L altera_common_sv_packages -work rsp_demux_002 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_rsp_demux_002
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_rsp_demux_002
+# End time: 21:43:22 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:22 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_rsp_demux.sv -L altera_common_sv_packages -work rsp_demux 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_rsp_demux
+# End time: 21:43:22 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:22 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_cmd_mux_002.sv -L altera_common_sv_packages -work cmd_mux_002 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_cmd_mux_002
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_cmd_mux_002
+# End time: 21:43:22 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:22 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_merlin_arbitrator.sv -L altera_common_sv_packages -work cmd_mux_002 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 21:43:23 on Nov 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:23 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_cmd_mux.sv -L altera_common_sv_packages -work cmd_mux 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_cmd_mux
+# End time: 21:43:23 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:23 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_merlin_arbitrator.sv -L altera_common_sv_packages -work cmd_mux 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 21:43:23 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:23 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_cmd_demux_002.sv -L altera_common_sv_packages -work cmd_demux_002 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_cmd_demux_002
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_cmd_demux_002
+# End time: 21:43:23 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:23 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_cmd_demux.sv -L altera_common_sv_packages -work cmd_demux 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_cmd_demux
+# End time: 21:43:23 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:23 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_router_006.sv -L altera_common_sv_packages -work router_006 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_router_006_default_decode
+# -- Compiling module hello_mm_interconnect_0_router_006
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_router_006
+# End time: 21:43:23 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:23 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_router_004.sv -L altera_common_sv_packages -work router_004 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_router_004_default_decode
+# -- Compiling module hello_mm_interconnect_0_router_004
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_router_004
+# End time: 21:43:23 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:23 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_router_002.sv -L altera_common_sv_packages -work router_002 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_router_002_default_decode
+# -- Compiling module hello_mm_interconnect_0_router_002
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_router_002
+# End time: 21:43:23 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:23 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_mm_interconnect_0_router.sv -L altera_common_sv_packages -work router 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0_router_default_decode
+# -- Compiling module hello_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0_router
+# End time: 21:43:24 on Nov 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:24 on Nov 12,2026
+# vlog ./../hello_tb/simulation/submodules/altera_avalon_sc_fifo.v -work juart_avalon_jtag_slave_agent_rsp_fifo 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 21:43:24 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:24 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_merlin_slave_agent.sv -L altera_common_sv_packages -work juart_avalon_jtag_slave_agent 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_merlin_slave_agent
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 21:43:24 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:24 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_merlin_burst_uncompressor.sv -L altera_common_sv_packages -work juart_avalon_jtag_slave_agent 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 21:43:24 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:24 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_merlin_axi_master_ni.sv -L altera_common_sv_packages -work cpu_data_manager_agent 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_merlin_axi_master_ni
+# 
+# Top level modules:
+# 	altera_merlin_axi_master_ni
+# End time: 21:43:24 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:24 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_merlin_address_alignment.sv -L altera_common_sv_packages -work cpu_data_manager_agent 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_merlin_address_alignment
+# 
+# Top level modules:
+# 	altera_merlin_address_alignment
+# End time: 21:43:24 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:24 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_merlin_slave_translator.sv -L altera_common_sv_packages -work juart_avalon_jtag_slave_translator 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 21:43:24 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:24 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_cpu_irq_mapper.sv -L altera_common_sv_packages -work irq_mapper 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_cpu_irq_mapper
+# 
+# Top level modules:
+# 	hello_cpu_irq_mapper
+# End time: 21:43:24 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:24 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_dm_def.sv -L altera_common_sv_packages -work dbg_mod 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:43:25 on Nov 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:25 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_ram.sv -L altera_common_sv_packages -work dbg_mod 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:25 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:25 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_dm_jtag2mm.sv -L altera_common_sv_packages -work dbg_mod 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:25 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:25 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_dm_top.sv -L altera_common_sv_packages -work dbg_mod 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:25 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:25 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_debug_module.sv -L altera_common_sv_packages -work dbg_mod 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:25 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:25 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_debug_rom.sv -L altera_common_sv_packages -work dbg_mod 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:25 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:25 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_std_synchronizer_bundle.v -L altera_common_sv_packages -work dbg_mod 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_std_synchronizer_bundle
+# 
+# Top level modules:
+# 	altera_std_synchronizer_bundle
+# End time: 21:43:26 on Nov 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:26 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_std_synchronizer_nocut.v -L altera_common_sv_packages -work dbg_mod 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_std_synchronizer_nocut
+# 
+# Top level modules:
+# 	altera_std_synchronizer_nocut
+# End time: 21:43:26 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:26 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_std_synchronizer.v -L altera_common_sv_packages -work dbg_mod 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_std_synchronizer
+# 
+# Top level modules:
+# 	altera_std_synchronizer
+# End time: 21:43:26 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:26 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_avalon_st_clock_crosser.v -L altera_common_sv_packages -work dbg_mod 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_st_clock_crosser
+# 
+# Top level modules:
+# 	altera_avalon_st_clock_crosser
+# End time: 21:43:26 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:26 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_avalon_st_handshake_clock_crosser.v -L altera_common_sv_packages -work dbg_mod 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_st_handshake_clock_crosser
+# 
+# Top level modules:
+# 	altera_avalon_st_handshake_clock_crosser
+# End time: 21:43:26 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:26 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_avalon_st_pipeline_base.v -L altera_common_sv_packages -work dbg_mod 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_st_pipeline_base
+# 
+# Top level modules:
+# 	altera_avalon_st_pipeline_base
+# End time: 21:43:26 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:26 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_avalon_st_pipeline_stage.sv -L altera_common_sv_packages -work dbg_mod 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_st_pipeline_stage
+# 
+# Top level modules:
+# 	altera_avalon_st_pipeline_stage
+# End time: 21:43:26 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:26 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_timer_msip.sv -L altera_common_sv_packages -work timer_module 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:27 on Nov 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:27 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/riscv.pkg.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:43:27 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:27 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_opcode_def.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:43:27 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:27 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_clic_pkg.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:43:27 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:27 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_mem_op_state.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:27 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:27 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_ram.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:27 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:27 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/ecc_enc.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:27 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:27 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/ecc_dec.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:28 on Nov 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:28 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/altecc_enc.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:28 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:28 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/altecc_dec.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:28 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:28 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_reg_file.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:28 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:28 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_csr.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:28 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:28 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_csrind_if.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:43:28 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:28 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_csrind_host.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:28 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:28 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_interrupt_handler.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# ** Warning: ./../hello_tb/simulation/submodules/mentor/niosv_interrupt_handler.sv(12): (vlog-13314) Defaulting port '<protected>' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ./../hello_tb/simulation/submodules/mentor/niosv_interrupt_handler.sv(12): (vlog-13314) Defaulting port '<protected>' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# End time: 21:43:29 on Nov 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:29 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_instr_buffer.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:29 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:29 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_bus_req.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:29 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:29 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_shift.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:29 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:29 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_alu.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:29 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:29 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_lsu.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:29 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:29 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_c_decoder.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:29 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:29 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_c_core.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:30 on Nov 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:30 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_c_csr.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:30 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:30 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_c_D_stage.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:30 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:30 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_c_E_stage.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:30 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:30 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_c_M0_stage.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:30 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:30 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_m_decoder.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# ** Warning: ./../hello_tb/simulation/submodules/mentor/niosv_m_decoder.sv(12): (vlog-13314) Defaulting port '<protected>' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ./../hello_tb/simulation/submodules/mentor/niosv_m_decoder.sv(12): (vlog-13314) Defaulting port '<protected>' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# End time: 21:43:30 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:30 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_m_core.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:31 on Nov 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:31 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_m_instr_prefetch.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:31 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:31 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_m_D_stage.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# ** Warning: ./../hello_tb/simulation/submodules/mentor/niosv_m_D_stage.sv(12): (vlog-13314) Defaulting port '<protected>' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ./../hello_tb/simulation/submodules/mentor/niosv_m_D_stage.sv(12): (vlog-13314) Defaulting port '<protected>' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# End time: 21:43:31 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:31 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_m_E_stage.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:31 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:31 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_m_M0_stage.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:31 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:31 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/niosv_m_W_stage.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 21:43:31 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:31 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/mentor/hello_cpu_hart.sv -L altera_common_sv_packages -work hart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_cpu_hart
+# 
+# Top level modules:
+# 	hello_cpu_hart
+# End time: 21:43:32 on Nov 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:32 on Nov 12,2026
+# vlog ./../hello_tb/simulation/submodules/altera_reset_controller.v -work rst_controller 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 21:43:32 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:32 on Nov 12,2026
+# vlog ./../hello_tb/simulation/submodules/altera_reset_synchronizer.v -work rst_controller 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 21:43:32 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:32 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/hello_irq_mapper.sv -L altera_common_sv_packages -work irq_mapper 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_irq_mapper
+# 
+# Top level modules:
+# 	hello_irq_mapper
+# End time: 21:43:32 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:32 on Nov 12,2026
+# vlog ./../hello_tb/simulation/submodules/hello_mm_interconnect_0.v -work mm_interconnect_0 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_mm_interconnect_0
+# 
+# Top level modules:
+# 	hello_mm_interconnect_0
+# End time: 21:43:32 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:32 on Nov 12,2026
+# vlog ./../hello_tb/simulation/submodules/hello_ram.v -work ram 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_ram
+# 
+# Top level modules:
+# 	hello_ram
+# End time: 21:43:32 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:32 on Nov 12,2026
+# vlog ./../hello_tb/simulation/submodules/hello_pio_out.v -work pio_out 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_pio_out
+# 
+# Top level modules:
+# 	hello_pio_out
+# End time: 21:43:32 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:32 on Nov 12,2026
+# vlog ./../hello_tb/simulation/submodules/hello_pio_in.v -work pio_in 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_pio_in
+# 
+# Top level modules:
+# 	hello_pio_in
+# End time: 21:43:32 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:32 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_avalon_jtag_uart.sv -L altera_common_sv_packages -work juart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_jtag_uart
+# 
+# Top level modules:
+# 	altera_avalon_jtag_uart
+# End time: 21:43:32 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:33 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_log_module.sv -L altera_common_sv_packages -work juart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_jtag_uart_log_module
+# 
+# Top level modules:
+# 	altera_avalon_jtag_uart_log_module
+# End time: 21:43:33 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:33 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_scfifo_r.sv -L altera_common_sv_packages -work juart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_jtag_uart_scfifo_r
+# 
+# Top level modules:
+# 	altera_avalon_jtag_uart_scfifo_r
+# End time: 21:43:33 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:33 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_scfifo_w.sv -L altera_common_sv_packages -work juart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_jtag_uart_scfifo_w
+# 
+# Top level modules:
+# 	altera_avalon_jtag_uart_scfifo_w
+# End time: 21:43:33 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:33 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_sim_scfifo_r.sv -L altera_common_sv_packages -work juart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_jtag_uart_sim_scfifo_r
+# 
+# Top level modules:
+# 	altera_avalon_jtag_uart_sim_scfifo_r
+# End time: 21:43:33 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:33 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_sim_scfifo_w.sv -L altera_common_sv_packages -work juart 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_jtag_uart_sim_scfifo_w
+# 
+# Top level modules:
+# 	altera_avalon_jtag_uart_sim_scfifo_w
+# End time: 21:43:33 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:33 on Nov 12,2026
+# vlog ./../hello_tb/simulation/submodules/hello_cpu.v -work cpu 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_cpu
+# 
+# Top level modules:
+# 	hello_cpu
+# End time: 21:43:33 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:33 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_avalon_reset_source.sv -L altera_common_sv_packages -work hello_inst_reset_bfm 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_reset_source
+# -- Importing package altera_common_sv_packages.verbosity_pkg
+# 
+# Top level modules:
+# 	altera_avalon_reset_source
+# End time: 21:43:33 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:33 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_conduit_bfm_0002.sv -L altera_common_sv_packages -work hello_inst_pio_out_bfm 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_conduit_bfm_0002
+# -- Importing package altera_common_sv_packages.verbosity_pkg
+# 
+# Top level modules:
+# 	altera_conduit_bfm_0002
+# End time: 21:43:34 on Nov 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:34 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_conduit_bfm.sv -L altera_common_sv_packages -work hello_inst_pio_in_bfm 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_conduit_bfm
+# -- Importing package altera_common_sv_packages.verbosity_pkg
+# 
+# Top level modules:
+# 	altera_conduit_bfm
+# End time: 21:43:34 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:34 on Nov 12,2026
+# vlog -sv ./../hello_tb/simulation/submodules/altera_avalon_clock_source.sv -L altera_common_sv_packages -work hello_inst_clk_bfm 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_clock_source
+# -- Importing package altera_common_sv_packages.verbosity_pkg
+# 
+# Top level modules:
+# 	altera_avalon_clock_source
+# End time: 21:43:34 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:34 on Nov 12,2026
+# vlog ./../hello_tb/simulation/submodules/hello.v -work hello_inst 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello
+# 
+# Top level modules:
+# 	hello
+# End time: 21:43:34 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:43:34 on Nov 12,2026
+# vlog ./../hello_tb/simulation/hello_tb.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module hello_tb
+# 
+# Top level modules:
+# 	hello_tb
+# End time: 21:43:34 on Nov 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# [exec] elab
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -t ps -voptargs="+acc" -L work -L work_lib -L altera_common_sv_packages -L error_adapter_0 -L niosv_reset_controller -L avalon_st_adapter -L rsp_mux_002 -L rsp_mux -L rsp_demux_002 -L rsp_demux -L cmd_mux_002 -L cmd_mux -L cmd_demux_002 -L cmd_demux -L router_006 -L router_004 -L router_002 -L router -L juart_avalon_jtag_slave_agent_rsp_fifo -L juart_avalon_jtag_slave_agent -L cpu_data_manager_agent -L juart_avalon_jtag_slave_translator -L irq_mapper -L dbg_mod -L timer_module -L hart -L rst_controller -L mm_interconnect_0 -L ram -L pio_out -L pio_in -L juart -L cpu -L hello_inst_reset_bfm -L hello_inst_pio_out_bfm -L hello_inst_pio_in_bfm -L hello_inst_clk_bfm -L hello_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver hello_tb 
+# Start time: 21:43:34 on Nov 12,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 linux_x86_64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.hello_tb(fast)
+# Loading hello_inst.hello(fast)
+# Loading cpu.hello_cpu(fast)
+# Loading sv_std.std
+# Loading hart.hello_cpu_hart(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading altera_mf_ver.sld_virtual_jtag_basic(fast)
+# Loading dbg_mod.altera_avalon_st_handshake_clock_crosser(fast)
+# Loading dbg_mod.altera_avalon_st_clock_crosser(fast)
+# Loading dbg_mod.altera_avalon_st_pipeline_base(fast)
+# Loading dbg_mod.altera_std_synchronizer_nocut(fast)
+# Loading dbg_mod.altera_avalon_st_handshake_clock_crosser(fast__1)
+# Loading dbg_mod.altera_avalon_st_clock_crosser(fast__1)
+# Loading dbg_mod.altera_avalon_st_pipeline_base(fast__1)
+# Loading rst_controller.altera_reset_controller(fast)
+# Loading rst_controller.altera_reset_synchronizer(fast)
+# Loading rst_controller.altera_reset_synchronizer(fast__1)
+# Loading altera_mf_ver.altsyncram(fast__1)
+# Loading altera_mf_ver.altsyncram_body(fast__1)
+# Loading altera_mf_ver.altsyncram(fast__2)
+# Loading altera_mf_ver.altsyncram_body(fast__2)
+# Loading irq_mapper.hello_cpu_irq_mapper(fast)
+# Loading juart.altera_avalon_jtag_uart(fast)
+# Loading juart.altera_avalon_jtag_uart_scfifo_w(fast)
+# Loading juart.altera_avalon_jtag_uart_sim_scfifo_w(fast)
+# Loading juart.altera_avalon_jtag_uart_log_module(fast)
+# Loading juart.altera_avalon_jtag_uart_scfifo_r(fast)
+# Loading juart.altera_avalon_jtag_uart_sim_scfifo_r(fast)
+# Loading pio_in.hello_pio_in(fast)
+# Loading pio_out.hello_pio_out(fast)
+# Loading ram.hello_ram(fast)
+# Loading altera_mf_ver.altsyncram(fast__3)
+# Loading altera_mf_ver.altsyncram_body(fast__3)
+# Loading mm_interconnect_0.hello_mm_interconnect_0(fast)
+# Loading juart_avalon_jtag_slave_translator.altera_merlin_slave_translator(fast)
+# Loading juart_avalon_jtag_slave_translator.altera_merlin_slave_translator(fast__1)
+# Loading juart_avalon_jtag_slave_translator.altera_merlin_slave_translator(fast__2)
+# Loading juart_avalon_jtag_slave_translator.altera_merlin_slave_translator(fast__3)
+# Loading juart_avalon_jtag_slave_translator.altera_merlin_slave_translator(fast__4)
+# Loading cpu_data_manager_agent.altera_merlin_axi_master_ni(fast)
+# Loading cpu_data_manager_agent.altera_merlin_axi_master_ni(fast__1)
+# Loading juart_avalon_jtag_slave_agent.altera_merlin_slave_agent(fast)
+# Loading juart_avalon_jtag_slave_agent.altera_merlin_burst_uncompressor(fast)
+# Loading juart_avalon_jtag_slave_agent_rsp_fifo.altera_avalon_sc_fifo(fast)
+# Loading juart_avalon_jtag_slave_agent_rsp_fifo.altera_avalon_sc_fifo(fast__1)
+# Loading juart_avalon_jtag_slave_agent_rsp_fifo.altera_avalon_sc_fifo(fast__2)
+# Loading juart_avalon_jtag_slave_agent_rsp_fifo.altera_avalon_sc_fifo(fast__3)
+# Loading router.hello_mm_interconnect_0_router(fast)
+# Loading router.hello_mm_interconnect_0_router_default_decode(fast)
+# Loading router_002.hello_mm_interconnect_0_router_002(fast)
+# Loading router_002.hello_mm_interconnect_0_router_002_default_decode(fast)
+# Loading router_004.hello_mm_interconnect_0_router_004(fast)
+# Loading router_004.hello_mm_interconnect_0_router_004_default_decode(fast)
+# Loading router_006.hello_mm_interconnect_0_router_006(fast)
+# Loading router_006.hello_mm_interconnect_0_router_006_default_decode(fast)
+# Loading cmd_demux.hello_mm_interconnect_0_cmd_demux(fast)
+# Loading cmd_demux_002.hello_mm_interconnect_0_cmd_demux_002(fast)
+# Loading cmd_mux.hello_mm_interconnect_0_cmd_mux(fast)
+# Loading cmd_mux.altera_merlin_arbitrator(fast)
+# Loading cmd_mux.altera_merlin_arb_adder(fast)
+# Loading cmd_mux_002.hello_mm_interconnect_0_cmd_mux_002(fast)
+# Loading cmd_mux_002.altera_merlin_arbitrator(fast)
+# Loading cmd_mux_002.altera_merlin_arb_adder(fast)
+# Loading rsp_demux.hello_mm_interconnect_0_rsp_demux(fast)
+# Loading rsp_demux_002.hello_mm_interconnect_0_rsp_demux_002(fast)
+# Loading rsp_mux.hello_mm_interconnect_0_rsp_mux(fast)
+# Loading rsp_mux.altera_merlin_arbitrator(fast)
+# Loading rsp_mux.altera_merlin_arb_adder(fast)
+# Loading rsp_mux_002.hello_mm_interconnect_0_rsp_mux_002(fast)
+# Loading avalon_st_adapter.hello_mm_interconnect_0_avalon_st_adapter(fast)
+# Loading error_adapter_0.hello_mm_interconnect_0_avalon_st_adapter_error_adapter_0(fast)
+# Loading irq_mapper.hello_irq_mapper(fast)
+# Loading rst_controller.altera_reset_controller(fast__1)
+# Loading altera_common_sv_packages.verbosity_pkg(fast)
+# Loading hello_inst_clk_bfm.altera_avalon_clock_source(fast)
+# Loading hello_inst_pio_in_bfm.altera_conduit_bfm(fast)
+# Loading hello_inst_pio_out_bfm.altera_conduit_bfm_0002(fast)
+# Loading hello_inst_reset_bfm.altera_avalon_reset_source(fast)
+#  echo SIGNALS: [find signals -r /hello_tb/*pio*export*]
+# SIGNALS: /hello_tb/hello_inst/pio_in_export /hello_tb/hello_inst/pio_out_export /hello_tb/hello_inst_pio_out_export /hello_tb/hello_inst_pio_in_bfm_conduit_export
+#  force -freeze /hello_tb/hello_inst/pio_in_export 4'hA 0
+#  run 6 ms
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: hello_tb.hello_inst.cpu.hart.m_core.niosv_m_full_inst.<protected>.<protected>.<protected>.<protected>.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: hello_tb.hello_inst.cpu.hart.m_core.niosv_m_full_inst.<protected>.<protected>.<protected>.<protected>.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: hello_tb.hello_inst.cpu.dbg_mod.<protected>.<protected>.<protected>.<protected>.m_default.altsyncram_inst
+# Warning: Value for read_during_write_mode_mixed_ports of instance is not honoured in DUAL PORT operation mode when output registers are not clocked by clock0 for LUTRAM.
+# Time: 0  Instance: hello_tb.hello_inst.cpu.dbg_mod.<protected>.<protected>.<protected>.<protected>.m_default.altsyncram_inst
+# Warning: RAM block type is assumed as     AUTO
+# Time: 0  Instance: hello_tb.hello_inst.cpu.dbg_mod.<protected>.<protected>.<protected>.<protected>.<protected>.<protected>.m_default.altsyncram_inst
+# Warning: Value for read_during_write_mode_mixed_ports of instance is not honoured in DUAL PORT operation mode when output registers are not clocked by clock0 for LUTRAM.
+# Time: 0  Instance: hello_tb.hello_inst.cpu.dbg_mod.<protected>.<protected>.<protected>.<protected>.<protected>.<protected>.m_default.altsyncram_inst
+# Warning: DONT_CARE value for read_during_write_mode_port_a is not supported in Stratix device family, it might cause incorrect behavioural simulation result
+# Time: 0  Instance: hello_tb.hello_inst.ram.the_altsyncram.m_default.altsyncram_inst
+#                    0: INFO: hello_tb.hello_inst_clk_bfm.__hello: - Hello from altera_clock_source.
+#                    0: INFO: hello_tb.hello_inst_clk_bfm.__hello: -   $Revision: #1 $
+#                    0: INFO: hello_tb.hello_inst_clk_bfm.__hello: -   $Date: 2025/03/10 $
+#                    0: INFO: hello_tb.hello_inst_clk_bfm.__hello: -   CLOCK_RATE = 50000000 Hz
+#                    0: INFO: ------------------------------------------------------------
+#                    0: INFO: hello_tb.hello_inst_reset_bfm.__hello: - Hello from altera_reset_source
+#                    0: INFO: hello_tb.hello_inst_reset_bfm.__hello: -   $Revision: #1 $
+#                    0: INFO: hello_tb.hello_inst_reset_bfm.__hello: -   $Date: 2025/03/10 $
+#                    0: INFO: hello_tb.hello_inst_reset_bfm.__hello: -   ASSERT_HIGH_RESET = 0
+#                    0: INFO: hello_tb.hello_inst_reset_bfm.__hello: -   INITIAL_RESET_CYCLES = 50
+#                    0: INFO: ------------------------------------------------------------
+#                    0: INFO: hello_tb.hello_inst_reset_bfm.reset_assert: Reset asserted
+#               990000: INFO: hello_tb.hello_inst_reset_bfm.reset_deassert: Reset deasserted
+# Hola mundo, aqui el Nios V/m reportandose 0...
+# Hola mundo, aqui el Nios V/m reportandose 1...
+# Hola mundo, aqui el Nios V/m reportandose 2...
+# Hola mundo, aqui el Nios V/m reportandose 3...
+# Hola mundo, aqui el Nios V/m reportandose 4...
+# PIO_OUT <- 0x01
+# PIO_OUT <- 0xa5
+# PIO_OUT <- 0xff
+# PIO_IN  = 0x0000000a
+# Fin del programa.
+#  echo PIO_OUT_FINAL = [examine -hex /hello_tb/hello_inst/pio_out_export]
+# PIO_OUT_FINAL = 8'hff
+#  quit -f
+# End time: 21:46:52 on Nov 12,2026, Elapsed time: 0:03:18
+# Errors: 0, Warnings: 0

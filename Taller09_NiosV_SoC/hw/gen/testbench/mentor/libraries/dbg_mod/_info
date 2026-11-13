@@ -1,0 +1,413 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/mentor
+valtera_avalon_st_clock_crosser
+2./../hello_tb/simulation/submodules/altera_avalon_st_clock_crosser.v
+Z1 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z2 !s110 1794541924
+!i10b 1
+!s100 4CQ15:T^9YIAR[A@kE:WZ1
+I3aV0XH8OnmUNM`GCeb]L03
+S1
+R0
+Z3 w1794316196
+8./../hello_tb/simulation/submodules/altera_avalon_st_clock_crosser.v
+F./../hello_tb/simulation/submodules/altera_avalon_st_clock_crosser.v
+!i122 113
+L0 22 120
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z6 !s108 1794541924.000000
+!s107 ./../hello_tb/simulation/submodules/altera_avalon_st_clock_crosser.v|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_avalon_st_clock_crosser.v|-L|altera_common_sv_packages|-work|dbg_mod|
+!i113 0
+Z7 o-sv -L altera_common_sv_packages -work dbg_mod -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+valtera_avalon_st_handshake_clock_crosser
+2./../hello_tb/simulation/submodules/altera_avalon_st_handshake_clock_crosser.v
+R1
+R2
+!i10b 1
+!s100 ZTJ4SBbFTo]V]BKXaeo>13
+I@`iTFPY4c@[4<?nDIP?O;3
+S1
+R0
+R3
+8./../hello_tb/simulation/submodules/altera_avalon_st_handshake_clock_crosser.v
+F./../hello_tb/simulation/submodules/altera_avalon_st_handshake_clock_crosser.v
+!i122 114
+L0 24 195
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./../hello_tb/simulation/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_avalon_st_handshake_clock_crosser.v|-L|altera_common_sv_packages|-work|dbg_mod|
+!i113 0
+R7
+R8
+valtera_avalon_st_pipeline_base
+2./../hello_tb/simulation/submodules/altera_avalon_st_pipeline_base.v
+R1
+R2
+!i10b 1
+!s100 B`Yjz6P[R<;Yl[CKNl]`<2
+Iz5ImZ5VkWI6@V=D:8;E5j2
+S1
+R0
+R3
+8./../hello_tb/simulation/submodules/altera_avalon_st_pipeline_base.v
+F./../hello_tb/simulation/submodules/altera_avalon_st_pipeline_base.v
+!i122 115
+L0 22 118
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./../hello_tb/simulation/submodules/altera_avalon_st_pipeline_base.v|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_avalon_st_pipeline_base.v|-L|altera_common_sv_packages|-work|dbg_mod|
+!i113 0
+R7
+R8
+valtera_avalon_st_pipeline_stage
+2./../hello_tb/simulation/submodules/altera_avalon_st_pipeline_stage.sv
+R1
+!s110 1794541925
+!i10b 1
+!s100 4c=[1LZoOYjJS3=W5LFL^0
+I;^BXbZbJ0D2H;G6CS6YnM0
+S1
+R0
+R3
+8./../hello_tb/simulation/submodules/altera_avalon_st_pipeline_stage.sv
+F./../hello_tb/simulation/submodules/altera_avalon_st_pipeline_stage.sv
+!i122 116
+L0 22 143
+R4
+R5
+r1
+!s85 0
+31
+!s108 1794541925.000000
+!s107 ./../hello_tb/simulation/submodules/altera_avalon_st_pipeline_stage.sv|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_avalon_st_pipeline_stage.sv|-L|altera_common_sv_packages|-work|dbg_mod|
+!i113 0
+R7
+R8
+valtera_std_synchronizer
+2./../hello_tb/simulation/submodules/altera_std_synchronizer.v
+R1
+R2
+!i10b 1
+!s100 b<zn=F=LM[jC3[KO3<g9n0
+I^m>T=f?P@iR5KY34cL4zC2
+S1
+R0
+R3
+8./../hello_tb/simulation/submodules/altera_std_synchronizer.v
+F./../hello_tb/simulation/submodules/altera_std_synchronizer.v
+!i122 112
+L0 37 120
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./../hello_tb/simulation/submodules/altera_std_synchronizer.v|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_std_synchronizer.v|-L|altera_common_sv_packages|-work|dbg_mod|
+!i113 0
+R7
+R8
+valtera_std_synchronizer_bundle
+2./../hello_tb/simulation/submodules/altera_std_synchronizer_bundle.v
+R1
+R2
+!i10b 1
+!s100 Cc6:6K1ZR^kn[UY_3MCF41
+I];KJcGX=JG6:VmNX;U^bn2
+S1
+R0
+R3
+8./../hello_tb/simulation/submodules/altera_std_synchronizer_bundle.v
+F./../hello_tb/simulation/submodules/altera_std_synchronizer_bundle.v
+!i122 110
+L0 32 29
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./../hello_tb/simulation/submodules/altera_std_synchronizer_bundle.v|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_std_synchronizer_bundle.v|-L|altera_common_sv_packages|-work|dbg_mod|
+!i113 0
+R7
+R8
+valtera_std_synchronizer_nocut
+2./../hello_tb/simulation/submodules/altera_std_synchronizer_nocut.v
+R1
+R2
+!i10b 1
+!s100 DjQWnUIefE8>?SdEhNX:V1
+I8jF7[>:dBUYb=LT:J>aS?1
+S1
+R0
+R3
+8./../hello_tb/simulation/submodules/altera_std_synchronizer_nocut.v
+F./../hello_tb/simulation/submodules/altera_std_synchronizer_nocut.v
+!i122 111
+L0 44 149
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./../hello_tb/simulation/submodules/altera_std_synchronizer_nocut.v|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_std_synchronizer_nocut.v|-L|altera_common_sv_packages|-work|dbg_mod|
+!i113 0
+R7
+R8
+v+u/s1dq9OhQx0dYuixyxc5KWMrsChCo3jDDrtD1f48Y=
+R1
+Z9 DXx4 work 12 niosv_dm_def 0 22 g?mMN?[HZnZECMNZ`]:gf1
+Z10 !s110 1794541923
+!i10b 0
+!s100 62nLlPM4ldE3C;X`655zb2
+IC1kdMDVafN]oLnYXcIP8j3
+!i119 1
+!i8a 1413672672
+S1
+R0
+Z11 w1794541923
+8./../hello_tb/simulation/submodules/mentor/niosv_debug_module.sv
+F./../hello_tb/simulation/submodules/mentor/niosv_debug_module.sv
+!i122 108
+Z12 L0 12 1
+R4
+R5
+r1
+!s85 0
+31
+Z13 !s108 1794541923.000000
+!s107 ./../hello_tb/simulation/submodules/mentor/niosv_debug_module.sv|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/mentor/niosv_debug_module.sv|-L|altera_common_sv_packages|-work|dbg_mod|
+!i113 0
+R7
+R8
+n8de4b35
+vCSOT7mDG4RXbILXFDyXDwA==
+R1
+R2
+!i10b 0
+!s100 J0oh<k2B9TDkFQmRc;RU=0
+IV5Q`nFPIZ]QSc^n<NFOlY3
+!i119 1
+!i8a 427626768
+S1
+R0
+w1794541924
+8./../hello_tb/simulation/submodules/mentor/niosv_debug_rom.sv
+F./../hello_tb/simulation/submodules/mentor/niosv_debug_rom.sv
+!i122 109
+R12
+R4
+R5
+r1
+!s85 0
+31
+R13
+!s107 ./../hello_tb/simulation/submodules/mentor/niosv_debug_rom.sv|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/mentor/niosv_debug_rom.sv|-L|altera_common_sv_packages|-work|dbg_mod|
+!i113 0
+R7
+R8
+nf1148ed
+XHdQ153qiU7UKsf/c3bckIQ==
+R1
+R10
+!i10b 0
+!s100 ecfVNcJo<QLbKiWFJEe[_1
+Ig?mMN?[HZnZECMNZ`]:gf1
+!i119 1
+!i8a 1333547280
+S1
+R0
+R11
+8./../hello_tb/simulation/submodules/mentor/niosv_dm_def.sv
+F./../hello_tb/simulation/submodules/mentor/niosv_dm_def.sv
+!i122 104
+Z14 L0 12 0
+Vg?mMN?[HZnZECMNZ`]:gf1
+R5
+r1
+!s85 0
+31
+R13
+!s107 ./../hello_tb/simulation/submodules/mentor/niosv_dm_def.sv|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/mentor/niosv_dm_def.sv|-L|altera_common_sv_packages|-work|dbg_mod|
+!i113 0
+R7
+R8
+n3033076
+vyhH4HBnWUfwMHBiM2jMcMcmjrKQgtMirpaReNnCVPVU=
+R1
+R9
+DXx4 work 24 niosv_dm_jtag2mm_sv_unit 0 22 1jHX;gR6^N^jK>@<FBgH@2
+R10
+R4
+r1
+!s85 0
+!i10b 0
+!s100 4SG[l:obGHlzkZ^><7S4G1
+IHj99bS9LRAz62ZDG?6=lX1
+!i119 1
+!i8a 1304508832
+!s105 niosv_dm_jtag2mm_sv_unit
+S1
+R0
+R11
+Z15 8./../hello_tb/simulation/submodules/mentor/niosv_dm_jtag2mm.sv
+Z16 F./../hello_tb/simulation/submodules/mentor/niosv_dm_jtag2mm.sv
+!i122 106
+R12
+R5
+31
+R13
+Z17 !s107 ./../hello_tb/simulation/submodules/mentor/niosv_dm_jtag2mm.sv|
+Z18 !s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/mentor/niosv_dm_jtag2mm.sv|-L|altera_common_sv_packages|-work|dbg_mod|
+!i113 0
+R7
+R8
+nb64ac7d
+XXpGUyKtgATDRhs0mkZ1vsegkKD7ag2QZu64MQichdTU=
+R1
+R9
+R10
+V1jHX;gR6^N^jK>@<FBgH@2
+r1
+!s85 0
+!i10b 0
+!s100 RJc[d<TUlG69Q^EmfM2;^3
+I1jHX;gR6^N^jK>@<FBgH@2
+!i103 1
+!i119 1
+!i8a 749314880
+S1
+R0
+R3
+R15
+R16
+!i122 106
+R14
+R5
+31
+R13
+R17
+R18
+!i113 0
+R7
+R8
+ne2a4f04
+vCstQcZw7AiNB3EpfB6tFBA==
+R1
+R9
+DXx4 work 20 niosv_dm_top_sv_unit 0 22 cTh^GO@aF[^_ZC_09CEen3
+R10
+R4
+r1
+!s85 0
+!i10b 0
+!s100 mP8c;=MU::1DAJWMH>^d41
+IXQA7<X99;LAWKkQ0TO4gA3
+!i119 1
+!i8a 735519952
+!s105 niosv_dm_top_sv_unit
+S1
+R0
+R11
+Z19 8./../hello_tb/simulation/submodules/mentor/niosv_dm_top.sv
+Z20 F./../hello_tb/simulation/submodules/mentor/niosv_dm_top.sv
+!i122 107
+R12
+R5
+31
+R13
+Z21 !s107 ./../hello_tb/simulation/submodules/mentor/niosv_dm_top.sv|
+Z22 !s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/mentor/niosv_dm_top.sv|-L|altera_common_sv_packages|-work|dbg_mod|
+!i113 0
+R7
+R8
+n30301a0
+XHHK5+ZQEb0x7x/eUQyCi0/rr59Fc0obA038qjL6UH+Q=
+R1
+R9
+R10
+VcTh^GO@aF[^_ZC_09CEen3
+r1
+!s85 0
+!i10b 0
+!s100 gD4I:UEe[lF=0<iO18afZ3
+IcTh^GO@aF[^_ZC_09CEen3
+!i103 1
+!i119 1
+!i8a 1740425728
+S1
+R0
+R3
+R19
+R20
+!i122 107
+R14
+R5
+31
+R13
+R21
+R22
+!i113 0
+R7
+R8
+n9c72464
+vrjyFqKgYvKJc+TjtWV4g5A==
+R1
+R10
+!i10b 0
+!s100 I@U5gYZ8jOkmZP7>k9naR3
+Ii]kFIJ^^8V?h2X3^jmAEi2
+!i119 1
+!i8a 1160841600
+S1
+R0
+R11
+8./../hello_tb/simulation/submodules/mentor/niosv_ram.sv
+F./../hello_tb/simulation/submodules/mentor/niosv_ram.sv
+!i122 105
+R12
+R4
+R5
+r1
+!s85 0
+31
+R13
+!s107 ./../hello_tb/simulation/submodules/mentor/niosv_ram.sv|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/mentor/niosv_ram.sv|-L|altera_common_sv_packages|-work|dbg_mod|
+!i113 0
+R7
+R8
+n6ac1d7d

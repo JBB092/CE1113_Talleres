@@ -1,0 +1,34 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/mentor
+vhello
+2./../hello_tb/simulation/submodules/hello.v
+!s110 1794541934
+!i10b 1
+!s100 B_5B]ZblHI;zj2DBN[9U53
+IK]^76>Cc^5n<zL>V3D@b;0
+R0
+w1794316194
+8./../hello_tb/simulation/submodules/hello.v
+F./../hello_tb/simulation/submodules/hello.v
+!i122 8
+L0 6 357
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2025.2;82
+r1
+!s85 0
+31
+!s108 1794541934.000000
+!s107 ./../hello_tb/simulation/submodules/hello.v|
+!s90 -reportprogress|300|./../hello_tb/simulation/submodules/hello.v|-work|hello_inst|
+!i113 0
+o-work hello_inst -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0

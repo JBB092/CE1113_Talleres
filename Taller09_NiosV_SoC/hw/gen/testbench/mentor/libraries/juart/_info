@@ -1,0 +1,161 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/mentor
+valtera_avalon_jtag_uart
+2./../hello_tb/simulation/submodules/altera_avalon_jtag_uart.sv
+Z1 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z2 !s110 1794541932
+!i10b 1
+!s100 VmzlWO3FNngB7T4c4jIKV1
+Ikd3foV^m^P<nTVCl51ci:0
+S1
+R0
+Z3 w1794316194
+8./../hello_tb/simulation/submodules/altera_avalon_jtag_uart.sv
+F./../hello_tb/simulation/submodules/altera_avalon_jtag_uart.sv
+!i122 48
+L0 22 269
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z6 !s108 1794541932.000000
+!s107 ./../hello_tb/simulation/submodules/altera_avalon_jtag_uart.sv|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_avalon_jtag_uart.sv|-L|altera_common_sv_packages|-work|juart|
+!i113 0
+Z7 o-sv -L altera_common_sv_packages -work juart -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+valtera_avalon_jtag_uart_log_module
+2./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_log_module.sv
+R1
+R2
+!i10b 1
+!s100 17YdXC32mV[6McZ[[Xbzz3
+I[VMS50;GVeJl0@C9AJlb_2
+S1
+R0
+R3
+8./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_log_module.sv
+F./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_log_module.sv
+!i122 49
+L0 22 38
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_log_module.sv|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_log_module.sv|-L|altera_common_sv_packages|-work|juart|
+!i113 0
+R7
+R8
+valtera_avalon_jtag_uart_scfifo_r
+2./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_scfifo_r.sv
+R1
+R2
+!i10b 1
+!s100 mk4GOGc3?S8W0Nc1XM_ie3
+Ijh^;k0S:=[QJEdBne]BH62
+S1
+R0
+R3
+8./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_scfifo_r.sv
+F./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_scfifo_r.sv
+!i122 50
+L0 22 91
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_scfifo_r.sv|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_scfifo_r.sv|-L|altera_common_sv_packages|-work|juart|
+!i113 0
+R7
+R8
+valtera_avalon_jtag_uart_scfifo_w
+2./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_scfifo_w.sv
+R1
+R2
+!i10b 1
+!s100 B2hPl>i5^RL=NXPeX=iC:3
+IR<X9[FIOYa;K08czjo1J?0
+S1
+R0
+R3
+8./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_scfifo_w.sv
+F./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_scfifo_w.sv
+!i122 51
+L0 22 90
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_scfifo_w.sv|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_scfifo_w.sv|-L|altera_common_sv_packages|-work|juart|
+!i113 0
+R7
+R8
+valtera_avalon_jtag_uart_sim_scfifo_r
+2./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_sim_scfifo_r.sv
+R1
+Z9 !s110 1794541933
+!i10b 1
+!s100 M>A19TUho7Kf1OCTNfc[T3
+I0@<d]=l]EN9JDS_>iWa:l0
+S1
+R0
+R3
+8./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_sim_scfifo_r.sv
+F./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_sim_scfifo_r.sv
+!i122 52
+L0 22 73
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 ./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_sim_scfifo_r.sv|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_sim_scfifo_r.sv|-L|altera_common_sv_packages|-work|juart|
+!i113 0
+R7
+R8
+valtera_avalon_jtag_uart_sim_scfifo_w
+2./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_sim_scfifo_w.sv
+R1
+R9
+!i10b 1
+!s100 eS^dRo^N7^nQB[kc]MF6b2
+IddaTbIFinR3lSmeLP_an<0
+S1
+R0
+R3
+8./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_sim_scfifo_w.sv
+F./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_sim_scfifo_w.sv
+!i122 53
+L0 22 95
+R4
+R5
+r1
+!s85 0
+31
+!s108 1794541933.000000
+!s107 ./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_sim_scfifo_w.sv|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/altera_avalon_jtag_uart_sim_scfifo_w.sv|-L|altera_common_sv_packages|-work|juart|
+!i113 0
+R7
+R8

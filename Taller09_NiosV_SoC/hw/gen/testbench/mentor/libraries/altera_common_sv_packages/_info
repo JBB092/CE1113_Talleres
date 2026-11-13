@@ -1,0 +1,36 @@
+m255
+K4
+z2
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jose_barquero/Documents/CE1113_Talleres/Taller09_NiosV_SoC/hw/gen/testbench/mentor
+Xverbosity_pkg
+2./../hello_tb/simulation/submodules/verbosity_pkg.sv
+DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+!s110 1794541919
+!i10b 1
+!s100 iL_6>2j1Qz>7b0TDA<o3W1
+Iz7mO9IZ<MmR1a05g=b;_D0
+S1
+R0
+w1794316194
+8./../hello_tb/simulation/submodules/verbosity_pkg.sv
+F./../hello_tb/simulation/submodules/verbosity_pkg.sv
+!i122 8
+L0 61 0
+Vz7mO9IZ<MmR1a05g=b;_D0
+OL;L;2025.2;82
+r1
+!s85 0
+31
+!s108 1794541919.000000
+!s107 ./../hello_tb/simulation/submodules/verbosity_pkg.sv|
+!s90 -reportprogress|300|-sv|./../hello_tb/simulation/submodules/verbosity_pkg.sv|-work|altera_common_sv_packages|
+!i113 0
+o-sv -work altera_common_sv_packages -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0
